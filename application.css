@@ -231,7 +231,7 @@ a {
     height:235px;
     width:235px;
     display:block;
-    background: $primary;
+    background: #969696;
     position:relative;
     &:hover{
         color: #fff;
