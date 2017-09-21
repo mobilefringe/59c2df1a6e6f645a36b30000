@@ -20,9 +20,9 @@
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/hours">Shopping Hours</option>
-            <option value="/contact_us">Contact Us</option>
-            <option value="/leasing">Leasing</option>
+            <option value="/customer_services">Customer Services</option>
+            <option value="/community_services">Community Services</option>
+            <option value="/green_initiatives">Green Initiatives</option>
         </select>
     </h5>
 </div>
@@ -43,7 +43,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/devonshire-security.json"
+            var pages_json = prefix + "/pages/carlingwood-security.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
