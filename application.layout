@@ -80,20 +80,19 @@
                     <ul class="sub_menu">
 						<li><a href="/stores">Directory</a></li>
 						<li><a href="/map">Centre Map</a></li>
+						<li><a href="/new_stores">New Stores</a></li>
 					</ul>
-                        
                 </li>
                 <li>
                     <a href="#"  class="submenu_expander">
-                        WHAT'S HAPPENING
+                        WHAT'S NEW
                         <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
                         <li><a href="/promotions">Store Sales</a></li>
                         <li><a href="/events">Mall Events</a></li>
-                        <li><a href="/events">New Stores</a></li>
-						
+						<li><a href="/posts">Get The Look</a></li>
 					</ul>
                 </li>
                 <li>
