@@ -90,33 +90,35 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/events">Events</a></li>
-						<li><a href="/promotions">Promotions</a></li>
+                        <li><a href="/promotions">Store Sales</a></li>
+                        <li><a href="/events">Mall Events</a></li>
+                        <li><a href="/events">New Stores</a></li>
+						
 					</ul>
                 </li>
                 <li>
                     <a href="#"  class="submenu_expander">
-                        GUEST SERVICES
+                        SERVICES
                         <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/services">Services & Amenities</a></li>
+                        <li><a href="/customer_services">Customer Services</a></li>
+                        <li><a href="/security">Security</a></li>
+                        <li><a href="/community_services">Community Services</a></li>
                         <li><a href="/green_initiatives">Green Initiatives</a></li>
-                        <li><a href="/parking">Parking</a></li>
 					</ul>
                 </li>
                 <li>
                     <a href="#" class="submenu_expander">
-                        INFORMATION
+                        VISIT US
                         <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" style="display: inline;">
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-						<li><a href="/accessibility">Accessibility</a></li>
-						<li><a href="/community_partners">Community Partners</a></li>
-						<li><a href="/charities" target="_blank">Charities & Non-Profit</a></li>
-						<li><a href="/jobs" target="_blank">Jobs</a></li>
+						<li><a href="/hours">Hours</a></li>
+						<li><a href="/about_us">About Us</a></li>
+						<li><a href="/directions">Directions</a></li>
 					</ul>
                 </li>
                 <li>
@@ -126,10 +128,10 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-						<li><a href="/tourism">Tourism Info Centre</a></li>
-						<li><a href="/directions">Driving Directions</a></li>
-						<li><a href="/area_map" target="_blank">Map of the Area</a></li>
-						<li><a href="/public_transit" target="_blank">Public Transit</a></li>
+                        <li><a href="/jobs" target="_blank">Jobs</a></li>
+                        <li><a href="/privacy_policy">Privacy Policy</a></li>
+						<li><a href="/leasing">Leasing</a></li>
+						<li><a href="/specialty_leasing" target="_blank">Specialty Leasing</a></li>
 					</ul>
                 </li>
                 <li>
@@ -207,7 +209,7 @@
                             Follow us on social for <br />activities and news
                         </p>
                         <div class="social_icons">
-                            <a href="https://www.facebook.com/devonshiremall" target="_blank">
+                            <a href="https://www.facebook.com/Carlingwood" target="_blank">
                                 <span id="social_fb"></span>
                             </a>
                             <a href="https://twitter.com/devonshiremall" target="_blank">
