@@ -84,6 +84,7 @@
     
     function renderPageData(){
         var blog = getBlogDataBySlug("Shop The Look").posts
+        console.log(blog)
         var blog_posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
         // var blog_posts = getBlogDataBySlug('').posts.reverse();
         var main_post = blog_posts[0];
