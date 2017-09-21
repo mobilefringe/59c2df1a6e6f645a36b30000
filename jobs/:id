@@ -1,0 +1,43 @@
+<div class="jobs_banner text-center">
+    <h3>JOBS</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container">
+    <div class="row" id="promo_details_container">
+        <script id="promo_details_template" type="x-tmpl-mustache/text">
+            <div class="col-md-8">
+                <h2 class="promo_list_name">{{name}}</h2>
+                <p>
+                    <span class="promo_store">{{store_name}}</span>
+                    <span class="promo_store">{{job_type}}</span>
+                    <span class="promo_dates">{{published_on}}</span>
+                </p>
+                <p class="promo_dates underline">{{dates}}</p>
+                <div class="details_desc">{{{rich_description}}}</div>
+            </div>
+            <div class="col-md-4 hidden_phone">
+                <img src="{{store_image}}" alt="Store Logo" class="store_logo" />
+                <div class="side_stores">
+                    <a href="tel:{{phone}}" style="{{phone_show}}">Phone: {{phone}}</a>
+                    <a href="/stores/{{store_slug}}" style="{{store_show}}">Visit Store Details</a>
+                    <a href="//{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                </div>
+                <div class="margin_20"></div>
+            </div>
+        </script>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            promo_details = getJobDetailsBySlug(slug);
+            renderJobDetails('#promo_details_container', '#promo_details_template', promo_details, "Carlingwood Shopping Centre")
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
