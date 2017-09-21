@@ -584,13 +584,6 @@ function renderStoreList(container, template, collection, starter, breaker){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
     $.each( collection , function( key, val ) {
-        var store_front_url = getAssetURL(val.id);
-        console.log(store_front_url)
-        if(store_front_url !== undefined){
-            val.store_front = "//mallmaverick.com" + store_front_url;
-            console.log(val.store_front)
-        }
-        
         if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
             val.alt_store_front_url = "";
         } else {
@@ -644,6 +637,13 @@ function renderStoreDetails(container, template, collection, slug){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
+        var store_front_url = getAssetURL(val.id);
+        console.log(store_front_url)
+        if(store_front_url !== undefined){
+            val.store_front = "//mallmaverick.com" + store_front_url;
+            console.log(val.store_front)
+        }
+        
         if ((val.store_front_url).indexOf('missing.png') > -1){
             val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
         } else {
