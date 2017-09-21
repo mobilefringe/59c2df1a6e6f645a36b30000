@@ -383,11 +383,7 @@ function renderPromotions(container, template, collection, centre){
             val.store_slug = "/"
             val.store_show = "display:none;";
         }
-        
-        // if (val.image_url.indexOf('missing.png') > 0){
-        //     val.image_url  = "";
-        // }
-        
+
         if (val.description.length > 200){
             val.description_short = val.description.substring(0,200) + "...";
         } else {
@@ -438,7 +434,7 @@ function renderPromoDetails(container, template, collection, centre){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -488,7 +484,7 @@ function renderPosts(container, template, collection){
         
         val.slug = "posts/" + val.slug;
         
-        val.twitter_title = val.title + " via @DevonshireMall";
+        val.twitter_title = val.title + " via @CarlingwoodSCTR";
         
         val.counter = counter;
         
@@ -505,7 +501,7 @@ function renderPostDetails(container, template, collection, blog_posts){
     var template_html = $(template).html();
     $.each(collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -542,7 +538,7 @@ function renderPostDetails(container, template, collection, blog_posts){
             }
         }
 
-        val.twitter_title = val.title + " via @DevonshireMall";
+        val.twitter_title = val.title + " via @CarlingwoodSCTR";
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
@@ -570,7 +566,7 @@ function renderSinglePost(container, template, main_post){
     
     main_post.slug = "posts/" + main_post.slug;
     
-    main_post.twitter_title = main_post.title + " via @DevonshireMall";
+    main_post.twitter_title = main_post.title + " via @CarlingwoodSCTR";
     
     var rendered = Mustache.render(template_html, main_post);
     item_list.push(rendered);
