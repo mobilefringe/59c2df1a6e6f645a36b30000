@@ -37,7 +37,7 @@
                             </div>
                             <div class="col-md-9">
                                 <p>
-                                    <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
+                                    <a href="{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{name}}</span></a>
                                     <span class="promo_dates" style="{{show}}">{{open}}</span>
                                 </p>
                                 <div class="promo_list_desc">{{description_short}}</div>
