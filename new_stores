@@ -58,20 +58,20 @@
         function renderAll (){
             var new_stores = getNewStoresList();
             console.log(new_stores)
-            show_cat_stores()
-            var published_promos = [];
-            $.each( promotions , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date);
-                if (today >= webDate) {
-                    published_promos.push(val)
-                } 
-            });
-            if(published_promos.length > 0){
-                renderPromotions("#promos_container","#promos_template", published_promos, "Carlingwood Shopping Centre");
-            } else {
-                $('#no_promos').show()
-            }
+            // show_cat_stores()
+            // var published_promos = [];
+            // $.each( promotions , function( key, val ){
+            //     today = moment();
+            //     webDate = moment(val.show_on_web_date);
+            //     if (today >= webDate) {
+            //         published_promos.push(val)
+            //     } 
+            // });
+            // if(published_promos.length > 0){
+            //     renderPromotions("#promos_container","#promos_template", published_promos, "Carlingwood Shopping Centre");
+            // } else {
+            //     $('#no_promos').show()
+            // }
             show_content();
         }
 		loadMallDataCached(renderAll); 
