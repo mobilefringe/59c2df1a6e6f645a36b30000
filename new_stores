@@ -56,11 +56,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll (){
-            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            var categories = getStoreCategories();
-            renderGeneral('#category_container', '#category_template', categories);
-            renderGeneral('#mobile_cat_list', '#category_template2', categories);
-            $('#mobile_cat_list').prepend('<option value="all" selected >All Categories</option>');
+            var new_stores = getNewStoresList();
+            console.log(new_stores)
             show_cat_stores()
             var published_promos = [];
             $.each( promotions , function( key, val ){
