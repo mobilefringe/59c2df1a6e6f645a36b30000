@@ -13,14 +13,12 @@
         <div class="col-md-4">
             <h5><a href="/directions">DIRECTIONS</a></h5>
         </div>
-        
     </div>
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/tourism">Tourism Info Centre</option>
-            <option value="/area_map">Area Map</option>
-            <option value="/public_transit">Public Transit</option>
+            <option value="/hours">Hours</option>
+            <option value="/directions">Directions</option>
         </select>
     </h5>
 </div>
@@ -41,7 +39,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/devonshire-directions.json"
+            var pages_json = prefix + "/pages/carlingwood-about-us.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
