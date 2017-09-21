@@ -18,6 +18,7 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/events">Events</option>
+            <option value="/posts">Get The Look</option>
         </select>
     </h5>
 </div>
