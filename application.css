@@ -43,11 +43,6 @@ body{
     }
 }
 
-.bc_banner {
-    margin: 20px auto;
-    max-width: 95%;
-}
-
 .position_relative{
     position:relative;
 }
@@ -396,12 +391,12 @@ h4 {
 }
 .main_banner{
     background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1505847053000/interior_banner.jpg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1502902607000/inside_banner.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
     padding: 0px 0px 85px 0;
-    h3{
+    h3 {
         margin:0;
         font-size: 54px;
         color: #fff;
@@ -423,9 +418,8 @@ h4 {
         font-family: 'Open Sans Condensed';
         text-transform: uppercase;
     }
-    
-    
 }
+
 #promo_details_container{
     .details_desc{
         margin-left:0 !important;
@@ -440,7 +434,7 @@ h4 {
     padding: 0 40px;
     background: #fff;
     font-family:'Open Sans Condensed';
-    h5, a{
+    h5, a {
         font-size: 24px;
         color: $primary;
         letter-spacing: 1.5px;
@@ -510,7 +504,7 @@ h4 {
 
 .jobs_banner{
     background-color: #000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1505847053000/interior_banner.jpg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1502902607000/inside_banner.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -541,7 +535,7 @@ h4 {
 
 .newsletter_banner { 
     background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/jpeg/1505847053000/interior_banner.jpg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1502902607000/inside_banner.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
