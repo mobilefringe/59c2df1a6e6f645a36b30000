@@ -20,7 +20,7 @@
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/customer_services">Customer Services</option>
+            <option value="/security">Security</option>
             <option value="/community_services">Community Services</option>
             <option value="/green_initiatives">Green Initiatives</option>
         </select>
