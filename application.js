@@ -366,10 +366,10 @@ function renderNewStores(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if(val.store_front_url.indexOf('missing.png') < 0){
-            val.store_front_url = "background-image: url(" + val.store_front_url_abs + ")";
+        if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+            val.alt_store_front_url = "";
         } else {
-            val.store_front_url = "background-image: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg);";
+            val.alt_store_front_url = getImageURL(val.store_front_url);    
         }
         
         var today = moment();
