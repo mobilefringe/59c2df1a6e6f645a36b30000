@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="{{meta_image}}" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/vnd.microsoft.icon/1502997437000/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
