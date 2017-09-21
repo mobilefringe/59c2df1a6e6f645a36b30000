@@ -360,6 +360,41 @@ function renderJobDetails(container, template, collection, mall_name){
     $(container).html(item_rendered.join(''));
 }
 
+function renderNewStores(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        if(val.store_front_url.indexOf('missing.png') < 0){
+            val.store_front_url = "background-image: url(" + val.store_front_url_abs + ")";
+        } else {
+            val.store_front_url = "background-image: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg);";
+        }
+        
+        var today = moment();
+        var store_opens = moment(val.new_store_open_date);
+        if(val.new_store_open_date != null || val.new_store_open_date != undefined){
+            if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
+                val.open = "Opens " + moment(val.new_store_open_date).format("MMM DD");
+                val.show = "display: block;";
+            } else {
+                val.open = "Now Open!"
+                val.show = "display: block;";
+            }
+        } else {
+            val.show = "display: none;";
+        }
+
+        if (val.description.length  >= 190) {
+            val.description = val.description.substring(0, 189) + "...";
+        }
+        var repo_rendered = Mustache.render(template_html,val);
+        item_rendered.push(repo_rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
+
 function renderPromotions(container, template, collection, centre){
     var item_list = [];
     var item_rendered = [];
