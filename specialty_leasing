@@ -22,7 +22,7 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/jobs">Jobs</option>
             <option value="/privacy_policy">Privacy Policy</option>
-            <option value="/specialty_leasing">Specialty Leasing</option>
+            <option value="/leasing">Leasing</option>
         </select>
     </h5>
 </div>
@@ -43,7 +43,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/carlingwood-leasing.json"
+            var pages_json = prefix + "/pages/carlingwood-speciality-leasing.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
