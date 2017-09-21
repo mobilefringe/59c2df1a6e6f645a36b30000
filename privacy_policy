@@ -41,7 +41,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/devonshire-privacy-policy.json"
+            var pages_json = prefix + "/pages/carlingwood-privacy-policy.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
