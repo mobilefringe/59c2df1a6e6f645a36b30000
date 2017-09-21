@@ -27,7 +27,6 @@
                     <div class="col-md-8">
                         <div class="details_desc">
                             <img class="margin_20" src="{{store_front}}"/>
-                            <div id="mapsvg_store_detail" class="mobile_padding"></div>
                             {{{rich_description}}}
                         </div>
                         
@@ -97,7 +96,7 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-8 promo_item" id="promos_main">
-            
+                <div id="mapsvg_store_detail" class="mobile_padding"></div>
             </div>
         </div>
     </div>
