@@ -26,10 +26,11 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="details_desc">
+                            <img src="{{store_front}}"/>
                             <div id="mapsvg_store_detail" class="mobile_padding"></div>
                             {{{rich_description}}}
                         </div>
-                        <img src="{{store_front}}"/>
+                        
                     </div>
                     <div class="col-md-4">
                         <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
