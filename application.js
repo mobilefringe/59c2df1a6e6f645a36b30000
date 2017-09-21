@@ -383,6 +383,7 @@ function renderNewStores(container, template, collection){
                 val.show = "display: inline;";
             }
         } else {
+            $(".promo_store").css({ "borderRight:", "none" });
             val.show = "display: none;";
         }
 
