@@ -58,7 +58,7 @@
         function renderAll (){
             var new_stores = getNewStoresList();
             console.log(new_stores)
-            renderStoresList("#stores_container", "#stores_template", new_stores);
+            renderStoreList("#stores_container", "#stores_template", new_stores);
             // show_cat_stores()
             // var published_promos = [];
             // $.each( promotions , function( key, val ){
