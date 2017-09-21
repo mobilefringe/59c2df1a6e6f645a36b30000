@@ -366,7 +366,7 @@ function renderNewStores(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if ((val.store_front_url).indexOf('missing.png') > -1){
+        if((val.store_front_url).indexOf('missing.png') > -1){
             val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
@@ -387,7 +387,9 @@ function renderNewStores(container, template, collection){
         }
 
         if (val.description.length  >= 190) {
-            val.description = val.description.substring(0, 189) + "...";
+            val.description_short = val.description.substring(0, 189) + "...";
+        } else {
+            val.description_short = val.description;
         }
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
