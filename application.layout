@@ -11,7 +11,7 @@
     <meta name="keywords" content="{{meta_keywords}}">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@DevonshireMall" />
+    <meta name="twitter:site" content="@CarlingwoodSCTR" />
     <meta name="twitter:title" content="{{meta_title}}" />
     <meta name="twitter:description" content="{{meta_description}}" />
     <meta name="twitter:image" content="{{meta_image}}" />
@@ -212,20 +212,17 @@
                             <a href="https://www.facebook.com/Carlingwood" target="_blank">
                                 <span id="social_fb"></span>
                             </a>
-                            <a href="https://twitter.com/devonshiremall" target="_blank">
+                            <a href="https://twitter.com/CarlingwoodSCTR" target="_blank">
                                 <span id="social_twitter"></span>
                             </a>
-                            <a href="https://www.pinterest.com/devonshiremall/" target="_blank">
+                            <a href="https://www.pinterest.ca/Carlingwood" target="_blank">
                                 <span id="social_pinterest"></span>
                             </a>
                             <a href="https://plus.google.com/110796734473316799509" target="_blank">
                                 <span id="social_google"></span>
                             </a>
-                            <a href="https://www.instagram.com/devonshiremall/" target="_blank">
+                            <a href="https://www.instagram.com/carlingwoodsctr" target="_blank">
                                 <span id="social_insta"></span>
-                            </a>
-                            <a href="https://www.snapchat.com/add/devonshiremall" target="_blank">
-                                <span id="social_sc"></span>
                             </a>
                             <a href="/newsletter">
                                 <span id="social_newsletter"></span>
