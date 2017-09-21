@@ -1,5 +1,5 @@
 <div class="jobs_banner text-center">
-    <h3>SECURITY</h3>
+    <h3>CUSTOMER SERVICES</h3>
     <p>explore • enjoy • shop</p>
 </div>
 <div class="store_list_head main_container">
@@ -43,7 +43,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/carlingwood-security.json"
+            var pages_json = prefix + "/pages/carlingwood-customer-services.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
