@@ -103,6 +103,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
+            console.log(store_details)
             renderStoreDetails("#store_container","#store_template", store_details, slug);
             var store_promo_ids = store_details.promotions
             var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
