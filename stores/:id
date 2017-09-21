@@ -93,6 +93,15 @@
         </div>
     </div>
 </div>
+<div class="main_container content_container">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-8 promo_item" id="promos_main">
+            
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
