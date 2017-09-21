@@ -27,8 +27,8 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="hidden_now" id="no_promo_in_category">There are no promotions in this category.</p>
-                <div id="promos_container">
-                    <script id="promos_template" type="x-tmpl-mustache/text">
+                <div id="stores_container">
+                    <script id="stores_template" type="x-tmpl-mustache/text">
                         <div class="row promo_item cats_row" data-cat="{{cat_list}}">
                             <div class="col-md-3">
                                 <div class="cropped_image">
@@ -42,7 +42,7 @@
                                     <span class="promo_dates">{{dates}}</span>
                                 </p>
                                 <div class="promo_list_desc">{{description_short}}</div>
-                                <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                                <a class="read_more" href="/stores/{{slug}}">Read More</a>
                             </div>
                         </div>
                     </script>
@@ -58,6 +58,7 @@
         function renderAll (){
             var new_stores = getNewStoresList();
             console.log(new_stores)
+            renderStoresList("#stores_container", "#stores_template", new_stores);
             // show_cat_stores()
             // var published_promos = [];
             // $.each( promotions , function( key, val ){
