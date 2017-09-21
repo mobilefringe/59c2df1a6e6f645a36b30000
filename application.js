@@ -585,7 +585,9 @@ function renderStoreList(container, template, collection, starter, breaker){
     var store_initial="";
     $.each( collection , function( key, val ) {
         var store_front_url = getAssetURL(val.id);
-        val.store_front = store_front_url;
+        if(store_front_url !== undefined){
+            val.store_front = "//mallmaverick.com" + store_front_url;
+        }
         
         if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
             val.alt_store_front_url = "";
