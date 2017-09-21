@@ -588,6 +588,7 @@ function renderStoreList(container, template, collection, starter, breaker){
         console.log(store_front_url)
         if(store_front_url !== undefined){
             val.store_front = "//mallmaverick.com" + store_front_url;
+            console.log(val.store_front)
         }
         
         if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
