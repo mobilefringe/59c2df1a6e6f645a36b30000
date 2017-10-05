@@ -1879,10 +1879,10 @@ gallery:after{
     .show_phone{
         display:block;
     }
-    // .main_logo{
-    //     width: 104px;
-    //     margin-top: 10px;
-    // }
+    .main_logo{
+        width: 104px;
+        margin-top: 10px;
+    }
     .search_btn{
         width: 30px;
         float: right;
