@@ -3,11 +3,24 @@
     <p>explore • enjoy • shop</p>
 </div>
 <div class="store_list_head main_container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="blog_header_filler"></div>
+    <div class="row hidden_phone">
+        <div class="col-md-4">
+            <h5><a href="/promotions">STORES SALES</a></h5>
+        </div>
+        <div class="col-md-4">
+            <h5><a href="/events">MALL EVENTS</a></h5>
+        </div>
+        <div class="col-md-4">
+            <h5 class="active_heading">GET THE LOOK</h5>
         </div>
     </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/events">Events</option>
+            <option value="/posts">Get The Look</option>
+        </select>
+    </h5>
 </div>
 <div class="margin_20"></div>
 <div class="content_container main_container mobile_padding">
