@@ -15,9 +15,9 @@
         <div class="feature_row">
             <div class="feature_item">
                 <div id="feature_0" class="position_relative">
-                    <a href="">
+                    <a href="/events">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x940_Kids.jpg" class="hoverer" alt="' +val.name+ '">
-                        <h5 class="center_h">'+ val.name +'</h5>
+                        <h5 class="center_h">Events</h5>
                     </a>
                 </div>
                 <div id="feature_1" class="position_relative">
@@ -95,9 +95,9 @@
                     </a>
                 </div>
                 <div id="feature_6" class="position_relative">
-                    <a href="">
+                    <a href="/community_services">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x940_Couple.jpg" class="hoverer" alt="' +val.name+ '">
-                        <h5 class="center_h">'+ val.name +'</h5>
+                        <h5 class="center_h">Community</h5>
                     </a>
                 </div>
             </div>
