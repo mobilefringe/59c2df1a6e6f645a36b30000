@@ -21,9 +21,9 @@
                     </a>
                 </div>
                 <div id="feature_1" class="position_relative">
-                    <a href="">
+                    <a href="/new_stores">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_PopCorn.jpg" class="hoverer" alt="' +val.name+ '">
-                        <h5 class="center_h">'+ val.name +'</h5>
+                        <h5 class="center_h">New Stores</h5>
                     </a>
                 </div>
             </div>
@@ -46,9 +46,9 @@
                     </a>
                 </div>
                 <div id="feature_3" class="position_relative">
-                    <a href="/new_stores">
+                    <a href="/posts">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_Chocolate.jpg" class="hoverer" alt="' +val.name+ '">
-                        <h5 class="center_h">New Stores</h5>
+                        <h5 class="center_h">Get The Look</h5>
                     </a>
                 </div>
             </div>
