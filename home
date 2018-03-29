@@ -71,9 +71,9 @@
                     </p>
                 </div>
                 <div id="feature_5" class="position_relative">
-                    <a href="">
+                    <a href="/customer_services">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_WomanHat.jpg" class="hoverer" alt="' +val.name+ '">
-                        <h5 class="center_h">'+ val.name +'</h5>
+                        <h5 class="center_h">Customer Services</h5>
                     </a>
                 </div>
             </div>
