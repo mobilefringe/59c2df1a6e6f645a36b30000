@@ -53,7 +53,12 @@
                 </div>
             </div>
             <div class="feature_item">
-                <div id="feature_4" class="position_relative"></div>
+                <div id="feature_4" class="position_relative">
+                    <a href="">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_Shoe.jpg" class="hoverer" alt="' +val.name+ '">
+                        <h5 class="center_h">'+ val.name +'</h5>
+                    </a>
+                </div>
                 <a href="https://www.facebook.com/Carlingwood" target="_blank" class="show_phone">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464191314000/hsc_facebook-1.jpg" alt="fb">
                 </a>
@@ -91,7 +96,7 @@
                 </div>
                 <div id="feature_6" class="position_relative">
                     <a href="">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_Shoe.jpg" class="hoverer" alt="' +val.name+ '">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x940_Couple.jpg" class="hoverer" alt="' +val.name+ '">
                         <h5 class="center_h">'+ val.name +'</h5>
                     </a>
                 </div>
