@@ -47,12 +47,11 @@
                 </div>
                 <div id="feature_3" class="position_relative">
                     <a href="">
-                        <img src=//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_Chocolate.jpg"" class="hoverer" alt="' +val.name+ '">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_Chocolate.jpg" class="hoverer" alt="' +val.name+ '">
                         <h5 class="center_h">'+ val.name +'</h5>
                     </a>
                 </div>
             </div>
-            
             <div class="feature_item">
                 <div id="feature_4" class="position_relative"></div>
                 <a href="https://www.facebook.com/Carlingwood" target="_blank" class="show_phone">
@@ -66,7 +65,12 @@
                         <span id="latest_fb_date"></span>    
                     </p>
                 </div>
-                <div id="feature_5" class="position_relative"></div>
+                <div id="feature_5" class="position_relative">
+                    <a href="">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_WomanHat.jpg" class="hoverer" alt="' +val.name+ '">
+                        <h5 class="center_h">'+ val.name +'</h5>
+                    </a>
+                </div>
             </div>
             
             <div class="feature_item">
@@ -85,7 +89,12 @@
                         <p class="hours_link">See More Hours</p>
                     </a>
                 </div>
-                <div id="feature_6" class="position_relative"></div>
+                <div id="feature_6" class="position_relative">
+                    <a href="">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522347581000/470x470_Shoe.jpg" class="hoverer" alt="' +val.name+ '">
+                        <h5 class="center_h">'+ val.name +'</h5>
+                    </a>
+                </div>
             </div>
             <div class="clearfix"></div>
         </div>
