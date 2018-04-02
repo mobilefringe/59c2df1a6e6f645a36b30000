@@ -1629,6 +1629,10 @@ gallery:after{
     .feature_item div, .feature_item img{
         width:100%;
     }
+    .feature_item p, .feature_item span {
+        font-size: 24px;
+        line-height: 28px;
+    }
     .feature_item img:hover{
         transform: scale(1);
     }
