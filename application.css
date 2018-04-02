@@ -206,19 +206,20 @@ a {
 }
 
 .social_box{
-    padding:22px 30px;
+    padding: 22px 30px;
     background: $primary;
-    height:235px;
-    width:235px;
-    display:inline-block;
+    height: 235px;
+    width: 235px;
+    display: inline-block;
     float: left;
-    color:#FFFFFF;
-    font-weight:bold;
+    color: #FFFFFF;
+    font-weight: bold;
     font-size: 13px;
     line-height: 18px;
-    img{
-        width:122px;
-        margin-bottom:15px;
+    img {
+        margin-bottom: 15px;
+        width: 122px;
+        
     }
 }
 
