@@ -2432,7 +2432,7 @@ gallery:after{
         margin: 0;
         font-size: 16px;
     }
-    .center_h {
+    .center_h, .home_feature_hours h5 {
         font-size: 16px;
     }
 }
