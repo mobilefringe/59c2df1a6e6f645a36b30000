@@ -28,7 +28,6 @@
                 </div>
             </div>
             <div class="feature_item">
-                <!--<a class="show_phone" href="https://twitter.com/CarlingwoodSCTR" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464116338000/hsc_twitter.jpg"  alt=""></a>-->
                 <div class="social_box text-center" d="social_twitter">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434698000/tweet.png" class="" alt="tweet">
                     <div class="hidden-xs">
@@ -64,9 +63,6 @@
                         <h5 class="center_h">Stores</h5>
                     </a>
                 </div>
-                <!--<a href="https://www.facebook.com/Carlingwood" target="_blank" class="show_phone">-->
-                <!--    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464191314000/hsc_facebook-1.jpg" alt="fb">-->
-                <!--</a>-->
                 <div class="social_box text-center" id="social_fb">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
                     <span class="hidden-xs">
@@ -92,9 +88,6 @@
             
             <div class="feature_item">
                 <div>
-                    <!--<a href="/hours" class="show_phone">-->
-                    <!--    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464118541000/hsc_hours.jpg" class="" alt="hours">-->
-                    <!--</a>-->
                     <a href="/hours" class="social_box text-center hours_box" id="hours_box">
                         <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463772189000/hours.png" class="" alt="hours">
                         <div id="home_hours_container2" class="home_feature_hours">
