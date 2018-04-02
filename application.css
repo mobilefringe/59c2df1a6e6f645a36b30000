@@ -2414,25 +2414,17 @@ gallery:after{
     }
 }
 
+@media(max-width: 375px){
+    .social_box {
+        padding: 22px 0;
+        height: 169px;
+    } 
+}
 @media(max-width: 320px){
     .popup_home img {
         min-width: 290px;
     }
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
- body{
-   
-  }
-    
-    
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-   body{
-      
-  }
-    
-    
+    .social_box {
+        height: 169px;
+    } 
 }
