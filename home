@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="feature_item">
-                <a class="show_phone" href="https://twitter.com/CarlingwoodSCTR" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464116338000/hsc_twitter.jpg"  alt=""></a>
+                <!--<a class="show_phone" href="https://twitter.com/CarlingwoodSCTR" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464116338000/hsc_twitter.jpg"  alt=""></a>-->
                 <div class="social_box hidden_phone text-center" d="social_twitter">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434698000/tweet.png" class="" alt="tweet">
                     <div>
@@ -59,9 +59,9 @@
                         <h5 class="center_h">Stores</h5>
                     </a>
                 </div>
-                <a href="https://www.facebook.com/Carlingwood" target="_blank" class="show_phone">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464191314000/hsc_facebook-1.jpg" alt="fb">
-                </a>
+                <!--<a href="https://www.facebook.com/Carlingwood" target="_blank" class="show_phone">-->
+                <!--    <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464191314000/hsc_facebook-1.jpg" alt="fb">-->
+                <!--</a>-->
                 <div class="hidden_phone social_box text-center" id="social_fb">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
                     <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
