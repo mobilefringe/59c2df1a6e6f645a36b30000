@@ -1636,8 +1636,8 @@ gallery:after{
     .giftbalance{
         float:none;
     }
-    .feature_item div, .feature_item img{
-        width:100%;
+    .feature_item div {
+        width: 100%;
     }
     .feature_item p, .feature_item span {
         font-size: 24px;
