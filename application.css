@@ -2389,6 +2389,9 @@ gallery:after{
     .social_box {
         height: 194px;
     } 
+    .hours_today, .hours_link, #latest_fb, #latest_fb_date {
+        display: none;
+    }
     .help-block {
         margin-top: -5px;
     }
