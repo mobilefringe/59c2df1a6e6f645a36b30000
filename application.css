@@ -1641,14 +1641,15 @@ gallery:after{
         height: 362px;
     }
     .store_list_head h5, .store_list_head a{
-        font-size:20px;
-    
+        font-size: 20px;
     }
-    body{
+    .hours_link {
+        left: calc(50%);
+        transform: translate(-50%);
+    }
+    body {
         padding-top:0;
     }
-    
-    
     .back_btn{
         display:block;
         margin: 0 15px !important;
