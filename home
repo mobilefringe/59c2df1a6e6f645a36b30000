@@ -64,11 +64,18 @@
                 <!--</a>-->
                 <div class="social_box text-center" id="social_fb">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434709000/facebook_post.png" class="" alt="facebook post">
-                    <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
-                    <p>
-                        <a  class="social_link_blank" href="https://www.facebook.com/Carlingwood" target="_blank">Facebook/Carlingwood</a><br/>
-                        <span id="latest_fb_date"></span>    
-                    </p>
+                    <span class="hidden-xs">
+                        <a href="#" id="latest_fb_link" target="_blank"><p id="latest_fb" class="latest_post"></p></a>
+                        <p>
+                            <a  class="social_link_blank" href="https://www.facebook.com/Carlingwood" target="_blank">Facebook/Carlingwood</a><br/>
+                            <span id="latest_fb_date"></span>    
+                        </p>
+                    </span>
+                    <span class="visible-xs-block">
+                        <a href="https://www.facebook.com/BillingsBridge" target="_blank">
+                            <h5 class="insta">LIKE US ON FACEBOOK</h5>
+                        </a>        
+                    </span>
                 </div>
                 <div id="feature_5" class="position_relative">
                     <a href="/customer_services">
