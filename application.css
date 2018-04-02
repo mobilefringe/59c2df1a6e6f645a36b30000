@@ -1632,6 +1632,10 @@ gallery:after{
     .feature_item img:hover{
         transform: scale(1);
     }
+    .social_box {
+        width: 100%;
+        height: 362px;
+    }
     .store_list_head h5, .store_list_head a{
         font-size:20px;
     
