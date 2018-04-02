@@ -2416,6 +2416,7 @@ gallery:after{
 
 @media(max-width: 375px){
     .social_box {
+        margin: 0;
         padding: 22px 0;
         height: 170px;
     } 
