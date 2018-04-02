@@ -2433,6 +2433,7 @@ gallery:after{
         font-size: 16px;
     }
     .center_h, .home_feature_hours h5 {
+        margin: 0;
         font-size: 16px;
     }
 }
