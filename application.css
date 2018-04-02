@@ -2431,4 +2431,7 @@ gallery:after{
     .feature_item div .insta {
         margin: 0;
     }
+    .center_h {
+        font-size: 16px;
+    }
 }
