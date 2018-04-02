@@ -2406,7 +2406,7 @@ gallery:after{
         display: none;
     }
     .feature_item div .insta {
-        margin: 0;
+        margin: 20px 0;
         font-size: 18px;
     }
     .help-block {
