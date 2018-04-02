@@ -2386,6 +2386,9 @@ gallery:after{
     .popup_home img {
         min-width: 330px;
     }
+    .social_box {
+        height: 194px;
+    } 
     .help-block {
         margin-top: -5px;
     }
