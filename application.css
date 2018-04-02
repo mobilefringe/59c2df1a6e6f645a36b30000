@@ -2430,6 +2430,7 @@ gallery:after{
     } 
     .feature_item div .insta {
         margin: 0;
+        font-size: 16px;
     }
     .center_h {
         font-size: 16px;
