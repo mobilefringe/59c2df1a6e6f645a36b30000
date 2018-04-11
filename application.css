@@ -178,17 +178,17 @@ a {
         color:#D8836C !important;
     }
 }
-.animated_btn{
+.animated_btn {
     position:relative;
     z-index: 0;
-    &:before{
+    &:before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: #50161f;
+        background: #865b95;
         z-index: -1;
         opacity: 0;
         -webkit-transform: scale3d(0.7, 1, 1);
