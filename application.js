@@ -125,7 +125,7 @@ function renderGallery(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.photo_url.indexOf('missing.png') > -1) {
-            val.gallery_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.gallery_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
         } else {
             val.gallery_image = "//www.mallmaverick.com" + val.photo_url;
         }
