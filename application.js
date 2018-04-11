@@ -684,7 +684,7 @@ function renderStoreDetails(container, template, collection, slug){
     $.each( item_list , function( key, val ) {
         var store_front_url = getAssetURL(val.id);
         console.log(store_front_url)
-        if(store_front_url !== undefined){
+        if(store_front_url != undefined && store_front_url != ""){
             val.store_front = "https://mallmaverick.com" + store_front_url;
             val.show_img = "display: block";
             console.log(val.store_front)
