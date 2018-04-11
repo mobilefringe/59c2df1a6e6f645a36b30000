@@ -689,7 +689,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.show_img = "display: block";
             console.log(val.store_front)
         } else {
-            val.store_front = "";
+            // val.store_front = "";
             val.show_img = "display: none";
         }
         
