@@ -81,7 +81,7 @@ function renderEventDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -125,7 +125,7 @@ function renderGallery(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.photo_url.indexOf('missing.png') > -1) {
-            val.gallery_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
+            val.gallery_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
         } else {
             val.gallery_image = "//www.mallmaverick.com" + val.photo_url;
         }
@@ -601,7 +601,7 @@ function renderSinglePost(container, template, main_post){
     Mustache.parse(template_html);   // optional, speeds up future uses
 
     if (main_post.image_url.indexOf('missing.png') > 0) {
-        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.pn";
+        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
     } else {
         main_post.post_image = main_post.image_url;
     }
