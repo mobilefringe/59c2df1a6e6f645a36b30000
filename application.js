@@ -693,13 +693,13 @@ function renderStoreDetails(container, template, collection, slug){
             val.show_img = "display: none";
         }
         
-         if ((val.store_front_url).indexOf('missing.png') > -1){
-                val.show_img = "display: none";
-                // val.store_front = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
-            } else {
-                val.store_front = val.store_front_url_abs;
-                val.show_img = "display: block";
-            }
+        //  if ((val.store_front_url).indexOf('missing.png') > -1){
+        //         val.show_img = "display: none";
+        //         // val.store_front = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
+        //     } else {
+        //         val.store_front = val.store_front_url_abs;
+        //         val.show_img = "display: block";
+        //     }
             
         if (val.website != null && val.website.length > 0){
             val.show = "display:block";
