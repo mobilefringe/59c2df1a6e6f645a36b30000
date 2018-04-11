@@ -684,11 +684,19 @@ function renderStoreDetails(container, template, collection, slug){
     $.each( item_list , function( key, val ) {
         console.log(collection)
         var store_front_url = getAssetURL(val.id);
-        if(store_front_url != "" && store_front_url != undefined && store_front_url != null) {
-            val.store_front = "//mallmaverick.com" + store_front_url;
-            val.show_img = "display: block";
+        if(store_front == "" && store_front == undefined && store_front == null) {
+            if((val.store_front_url_abs).indexOf('missing.png') > -1) {
+                val.store_front = "";
+                val.show_img = "display: none"; 
+            } else {
+                val.store_front = val.store_front_url_abs;
+                val.show_img = "display: block";
+            }
+            // val.store_front = "//mallmaverick.com" + store_front_url;
+            // val.show_img = "display: block";
         } else {
-            val.show_img = "display: none";    
+            val.store_front = val.store_front;
+            val.show_img = "display: block";    
         }
         
         if ((val.store_front_url).indexOf('missing.png') > -1){
