@@ -684,7 +684,7 @@ function renderStoreDetails(container, template, collection, slug){
     $.each( item_list , function( key, val ) {
         console.log(collection)
         // var store_front_url = getAssetURL(val.id);
-        if(store_front === undefined && store_front === null && store_front === "") {
+        if(store_front == undefined && store_front == null && store_front == "") {
             if((val.store_front_url_abs).indexOf('missing.png') > -1) {
                 val.store_front = "";
                 val.show_img = "display: none"; 
