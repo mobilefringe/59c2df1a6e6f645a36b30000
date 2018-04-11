@@ -342,13 +342,13 @@ function renderJobDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
         }
         if (val.store_image.indexOf('missing.png') > 0){
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
         }
 
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
@@ -367,7 +367,7 @@ function renderNewStores(container, template, collection){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         if((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
@@ -427,7 +427,7 @@ function renderPromotions(container, template, collection, centre){
             }
             val.store_slug = "/stores/" + store_details.slug
         } else {
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
             val.store_name = mall_name;
             val.store_slug = "/"
             val.store_show = "display:none;";
@@ -519,7 +519,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -601,7 +601,7 @@ function renderSinglePost(container, template, main_post){
     Mustache.parse(template_html);   // optional, speeds up future uses
 
     if (main_post.image_url.indexOf('missing.png') > 0) {
-        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.pn";
     } else {
         main_post.post_image = main_post.image_url;
     }
@@ -690,7 +690,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1502995441000/default.png";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.pn";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
