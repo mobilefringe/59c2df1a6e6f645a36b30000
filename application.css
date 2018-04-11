@@ -1298,7 +1298,7 @@ h4 {
 .side_stores {
     text-align: center;
     a {
-        background: $secondary;
+        background: $primary;
         margin-top:20px;
         font-weight:100;
         font-size: 22px;
