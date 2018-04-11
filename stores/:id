@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
+                        <img src="{{store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
                         <div class="side_stores">
                             <a class="animated_btn" href="tel:{{phone}}" style="{{phone_show}}">Phone: {{phone}}</a>
                             <a class="animated_btn" href="//{{website}}" target="_blank" style="{{show}}">Visit Website</a>
