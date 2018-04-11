@@ -690,7 +690,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.pn";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
