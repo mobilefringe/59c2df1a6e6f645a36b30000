@@ -687,19 +687,15 @@ function renderStoreDetails(container, template, collection, slug){
         if(store_front_url != undefined && store_front_url != ""){
             val.store_front = "https://mallmaverick.com" + store_front_url;
             val.show_img = "display: block";
-            console.log(val.store_front)
         } else {
-            // val.store_front = "";
             val.show_img = "display: none";
         }
         
-        //  if ((val.store_front_url).indexOf('missing.png') > -1){
-        //         val.show_img = "display: none";
-        //         // val.store_front = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
-        //     } else {
-        //         val.store_front = val.store_front_url_abs;
-        //         val.show_img = "display: block";
-        //     }
+        if ((val.store_front_url_abs).indexOf('missing.png') > -1){
+                val.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523458715000/carlingwoodlogo.png";
+            } else {
+                val.store_front_url_abs = val.store_front_url_abs;;
+            }
             
         if (val.website != null && val.website.length > 0){
             val.show = "display:block";
