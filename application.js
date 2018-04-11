@@ -682,6 +682,7 @@ function renderStoreDetails(container, template, collection, slug){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
+        console.log(collection)
         var store_front_url = getAssetURL(val.id);
         if(store_front_url != "" && store_front_url != undefined && store_front_url != null) {
             val.store_front = "//mallmaverick.com" + store_front_url;
