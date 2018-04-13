@@ -399,7 +399,7 @@ h4 {
     h3 {
         margin:0;
         font-size: 54px;
-        color: #fff;
+        color: black;
         letter-spacing: 4px;
         padding-top: 60px;
         margin-bottom: 10px;
@@ -413,7 +413,7 @@ h4 {
     }
     p{
         font-size: 24px;
-        color: #fff;
+        color: black;
         letter-spacing: 0.5px;
         font-family: 'Open Sans Condensed';
         text-transform: uppercase;
