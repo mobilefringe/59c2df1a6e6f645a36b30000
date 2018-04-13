@@ -535,7 +535,7 @@ h4 {
 
 .newsletter_banner { 
     background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1502902607000/inside_banner.png);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -543,7 +543,7 @@ h4 {
     h3 {
         margin:0;
         font-size: 54px;
-        color: #fff;
+        color: black;
         letter-spacing: 4px;
         margin-bottom: 10px;
         font-family: 'Raleway', sans-serif;
@@ -551,7 +551,7 @@ h4 {
     }
     p{
         font-size: 24px;
-        color: #fff;
+        color: black;
         letter-spacing: 0.5px;
         font-family: 'Open Sans Condensed';
         text-transform: uppercase;
