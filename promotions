@@ -47,6 +47,9 @@
                         </div>
                     </script>
                 </div>
+                <div id="no_promos">
+                    <p>There are currently no Events, please check again later.</p>
+                </div>
             </div>
         </div>
     </div>
