@@ -127,7 +127,7 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/jobs" target="_blank">Jobs</a></li>
+                        <li><a href="/jobs">Jobs</a></li>
                         <li><a href="/privacy_policy">Privacy Policy</a></li>
 						<li><a href="/leasing">Leasing</a></li>
 						<li><a href="/specialty_leasing" target="_blank">Specialty Leasing</a></li>
