@@ -47,7 +47,7 @@
                         </div>
                     </script>
                 </div>
-                <div id="no_promos">
+                <div id="no_promos" class="hidden_now">
                     <p>There are currently no Events, please check again later.</p>
                 </div>
             </div>
