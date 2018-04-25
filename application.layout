@@ -155,7 +155,7 @@
         </div>
         <section class="content_container main_container position_relative">
             <div class="row header mobile_margin">
-                <div class="hidden_phone col-sm-3 col-md-4">
+                <div class="hidden_mobile col-sm-3 col-md-4">
                     <p class="hours_home hidden_phone"><span class="hours_dot"></span> 
                         Today's Hours:
                         <span id="home_hours_container">
