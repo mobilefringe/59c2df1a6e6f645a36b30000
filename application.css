@@ -1919,11 +1919,11 @@ gallery:after{
         float: right;
         margin-top: 12px;
     }
-    .open_menu{
-        width:33px;
-        margin-top:20px;
+    .open_menu {
+        margin-top: 50px;
+        margin-right: 20px;
+        width: 33px;
     }
-    
     .header{
         padding: 15px;
         
@@ -2407,6 +2407,9 @@ gallery:after{
 @media(max-width: 425px){
     .popup_home img {
         min-width: 330px;
+    }
+    .open_menu {
+        margin-right: 0;
     }
     .hero_banner {
         height: 170px;
