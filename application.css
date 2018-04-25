@@ -1629,6 +1629,15 @@ gallery:after{
     margin-top:25px;
 }
 
+@media(max-width: 1024px){
+    .hero_banner {
+        height: 420px;
+    }
+    .feature_items_box {
+        margin-top: -60px;
+    }
+}
+
 @media(max-width: 768px){
     .popup_home img {
         min-width: 490px;
