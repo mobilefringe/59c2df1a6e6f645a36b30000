@@ -2430,6 +2430,9 @@ gallery:after{
 }
 
 @media(max-width: 375px){
+    .hero_banner {
+        height: 140px;
+    }
     .social_box {
         margin: 0;
         padding: 22px 0;
