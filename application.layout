@@ -166,12 +166,12 @@
                     </p>
                     <a href="/hours" class="holiday_hours_home soft_hidden_phone">Check for Holiday Hours</a>
                 </div>
-                <div class="col-xs-8 col-sm-6 col-md-4 text-center">
+                <div class="col-xs-9 col-sm-6 col-md-4 text-center">
                     <a href="/">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1523892667000/cwd_logo_web.png" class="main_logo " alt="main_logo">
                     </a>
                 </div>
-                <div class="col-xs-4 col-sm-3 col-md-4 text-right position_relative">
+                <div class="col-xs-3 col-sm-3 col-md-4 text-right position_relative">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1460488452000/icon_menu.png" class="open_menu" alt="menu open">
                 </div>
                 <div class="col-xs-12 show_phone home_hours_phone">
