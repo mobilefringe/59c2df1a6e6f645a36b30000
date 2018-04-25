@@ -116,16 +116,20 @@
             </div>
             
             <div class="feature_item">
-                <a class="show_phone" href="https://twitter.com/CarlingwoodSCTR" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/jpeg/1464116338000/hsc_twitter.jpg"  alt=""></a>
-                <div class="social_box hidden_phone text-center" d="social_twitter">
+                <div class="social_box text-center" d="social_twitter">-->
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434698000/tweet.png" class="" alt="tweet">
-                    <div>
+                    <div class="hidden-xs">
                         <a href="#" id="latest_tweet_link" target="_blank"><p id="latest_tweet" class="latest_post"></p></a>
                         <p>
                             <a class="social_link_blank" href="https://twitter.com/CarlingwoodSCTR" target="_blank">Carlingwood Shopping Centre</a><br/>
                             <span id="latest_tweet_date"></span>
                         </p>
                     </div>
+                    <span class="visible-xs-block">
+                        <a href="https://twitter.com/CarlingwoodSCTR" target="_blank">
+                            <h5 class="insta">FOLLOW US ON TWITTER</h5>
+                        </a>        
+                    </span>
                 </div>
                 <div id="feature_2" class="position_relative"></div>
                 <div id="feature_3" class="position_relative"></div>
