@@ -116,7 +116,7 @@
             </div>
             
             <div class="feature_item">
-                <div class="social_box text-center" d="social_twitter">-->
+                <div class="social_box text-center" d="social_twitter">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434698000/tweet.png" class="" alt="tweet">
                     <div class="hidden-xs">
                         <a href="#" id="latest_tweet_link" target="_blank"><p id="latest_tweet" class="latest_post"></p></a>
