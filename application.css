@@ -2405,6 +2405,9 @@ gallery:after{
 }
 
 @media(max-width: 425px){
+    .hidden_mobile {
+        display: none;
+    }
     .popup_home img {
         min-width: 330px;
     }
