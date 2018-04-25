@@ -2408,6 +2408,12 @@ gallery:after{
     .popup_home img {
         min-width: 330px;
     }
+    .hero_banner {
+        height: 170px;
+    }
+    .feature_items_box {
+        margin-top: 20px;
+    }
     .social_box {
         height: 194px;
     } 
