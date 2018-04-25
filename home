@@ -114,7 +114,6 @@
                 <div id="feature_0" class="position_relative"></div>
                 <div id="feature_1" class="position_relative"></div>
             </div>
-            
             <div class="feature_item">
                 <div class="social_box text-center" d="social_twitter">
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463434698000/tweet.png" class="" alt="tweet">
@@ -134,7 +133,6 @@
                 <div id="feature_2" class="position_relative"></div>
                 <div id="feature_3" class="position_relative"></div>
             </div>
-            
             <div class="feature_item">
                 <div id="feature_4" class="position_relative"></div>
                 <div class="social_box text-center" id="social_fb">
@@ -154,7 +152,6 @@
                 </div>
                 <div id="feature_5" class="position_relative"></div>
             </div>
-            
             <div class="feature_item">
                 <div>
                     <a href="/hours" class="social_box text-center hours_box" id="hours_box">
