@@ -7,8 +7,8 @@
         <div class="col-md-3">
             <h5><a href="/promotions">STORE SALES</a></h5>
         </div>
-        <div class="col-md-3">
-            <h5>MALL EVENTS</h5>
+       <div class="col-md-3">
+            <h5><a href="/events">MALL EVENTS</a></h5>
         </div>
         <div class="col-md-3">
             <h5><a href="/posts">GET THE LOOK</a></h5>
