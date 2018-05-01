@@ -5,24 +5,24 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-3">
-            <h5><a href="/customer_services">CUSTOMER SERVICES</a></h5>
+            <h5><a href="/promotions">STORE SALES</a></h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/security">SECURITY</a></h5>
+            <h5>MALL EVENTS</h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/community_services">COMMUNITY</a></h5>
+            <h5><a href="/posts">GET THE LOOK</a></h5>
         </div>
         <div class="col-md-3">
-            <h5 class="active_heading">GREEN INITIATIVES</h5>
+            <h5 class="active_heading"><a href="/pages/carlingwood-tv">CARLINGWOOD TV</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/customer_services">Customer Services</option>
-            <option value="/security">Security</option>
-            <option value="/community_services">Community Services</option>
+            <option value="/promotions">Promotions</option>
+            <option value="/posts">Get The Look</option>
+            <option value="/pages/carlingwood-tv">Carlingwood TV</option>
         </select>
     </h5>
 </div>
