@@ -4,14 +4,17 @@
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h5><a href="/promotions">STORES SALES</a></h5>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h5><a href="/events">MALL EVENTS</a></h5>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h5 class="active_heading">GET THE LOOK</h5>
+        </div>
+         <div class="col-md-3">
+            <h5><a href="/pages/carlingwood-tv">CARLINGWOOD TV</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
@@ -19,6 +22,7 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/promotions">Promotions</option>
             <option value="/events">Events</option>
+             <option value="/pages/carlingwood-tv">Carlingwood TV</option>
             
         </select>
     </h5>
