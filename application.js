@@ -409,10 +409,10 @@ function renderPromotions(container, template, collection, centre){
             val.store_name = store_details.name;
             val.store_show = "display:inline-block";
             val.image_url = val.promo_image_url_abs;
-            if (val.promo_image_url_abs.indexOf('missing.png') > 0){
+            if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                 val.image_url  = store_details.store_front_url_abs;
             }
-            else if (store_details.store_front_url_abs.indexOf('missing.png') > 0){
+            else if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url  = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png"
             }
             
