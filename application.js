@@ -397,7 +397,7 @@ function renderNewStores(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-function renderPromotions(container, template, collection, centre){
+function renderPromotions(container, template, collection, mall_name){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
