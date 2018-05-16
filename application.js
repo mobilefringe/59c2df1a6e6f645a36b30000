@@ -429,7 +429,6 @@ function renderPromotions(container, template, collection, mall_name){
         } else {
             
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                console.log(val.promo_image_url_abs.indexOf('missing.png') > -1);
                 val.image_url  = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png";
             }
             else {
