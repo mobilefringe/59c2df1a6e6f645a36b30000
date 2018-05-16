@@ -80,7 +80,6 @@ function renderEventDetails(container, template, collection, mall_name){
                 val.show = "display:none";
             }
         } else {
-            console.log("mall_name", mall_name);
             val.store_name = mall_name;
             val.store_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1524153709000/default_logo.png";
             val.store_show = "display:none";
