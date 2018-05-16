@@ -58,7 +58,7 @@
             var slug = pathArray[pathArray.length-1];
             promo_details = getEventDetailsBySlug(slug);
             var mall_name = "Carlingwood Shopping Centre";
-            renderEventDetails('#promo_details_container', '#promo_details_template', promo_details)
+            renderEventDetails('#promo_details_container', '#promo_details_template', promo_details, mall_name)
             show_content();
         }
         loadMallDataCached(renderAll); 
