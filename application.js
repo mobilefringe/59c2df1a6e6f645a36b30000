@@ -429,9 +429,9 @@ function renderPromotions(container, template, collection, mall_name){
         } else {
             console.log(val.promo_image_url_abs);
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                val.image_url  = store_details.store_front_url_abs;
+                val.image_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1524153709000/default_logo.png";
             }
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1524153709000/default_logo.png";
+            
             val.store_name = mall_name;
             val.store_slug = "/"
             val.store_show = "display:none;";
