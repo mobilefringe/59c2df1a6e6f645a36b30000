@@ -559,7 +559,7 @@ function renderPostDetails(container, template, collection, blog_posts){
     var template_html = $(template).html();
     $.each(collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1505943652000/Carlingwood_Logo_New.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1524153709000/default_logo.png";
         } else {
             val.post_image = val.image_url;
         }
