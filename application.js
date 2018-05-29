@@ -284,7 +284,7 @@ function renderHours(container, template, collection, type){
     $(container).html(item_rendered.join(''));
 }
 
-function renderJobs(container, template, collection){
+function renderJobs(container, template, collection, mall_name){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
