@@ -14,7 +14,7 @@
             <h5><a href="/community_services">COMMUNITY</a></h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/green_initiatives">GREEN INITIATIVES</a></h5>
+            <h5><a href="/green_initiatives">ACT GREEN INITIATIVES</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
@@ -22,7 +22,7 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/customer_services">Customer Services</option>
             <option value="/community_services">Community Services</option>
-            <option value="/green_initiatives">Green Initiatives</option>
+            <option value="/green_initiatives">ACT Green Initiatives</option>
         </select>
     </h5>
 </div>
