@@ -2450,6 +2450,12 @@ gallery:after{
     .hidden_mobile {
         display: none;
     }
+    .banner_container {
+        max-height: 400px;
+        .banner_image {
+            height: 400px;
+        }
+    }
     .popup_home img {
         min-width: 330px;
     }
