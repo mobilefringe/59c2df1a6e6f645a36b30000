@@ -522,50 +522,6 @@ h4 {
     }
    
 }
-.hero_banner{
-    background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/5b7c32dc6e6f647948190000/image/jpeg/1522264344000/CWD_NewWebsite_Header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center center;
-    height:540px;
-    h3 {
-        margin:0;
-        font-size: 54px;
-        color: #FFF;
-        letter-spacing: 4px;
-        padding-top: 140px;
-        margin-bottom: 10px;
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
-    }
-    p{
-        font-size: 24px;
-        color: #58595b;
-        letter-spacing: 0.5px;
-        margin-bottom:32px;
-        font-family: 'Open Sans Condensed';
-        text-transform: uppercase;
-    }
-    a{
-        font-weight: 100;
-        font-size: 22px;
-        color: white;
-        letter-spacing: 0.35px;
-        border: 1px solid white;
-        padding: 15px 35px 20px;
-        display: inline-block;
-        background: transparent;
-        line-height: 22px;
-        &:hover{
-            color:#fff;
-            text-decoration:none;
-        }
-        &:before{
-                background: $secondary !important;
-        }
-    }
-}
 
 .jobs_banner{
     background-color: #000;
@@ -1781,24 +1737,12 @@ gallery:after{
         margin-top: 20px;
         text-align: center;
     }
-    .hero_banner{
-        padding: 0 60px;
-        height: 300px;
-        p{
-            margin-top:15px;
-            margin-bottom: 25px;
-        }
-    }
     .feature_items_box{
         margin-top: -50px;
     }
     .feature_item{
         width: 50%;
         float:left;
-    }
-    .hero_banner h3{
-        font-size:28px;
-        padding-top:50px;
     }
     .site_search_results h2{
         padding: 15px 12px;
@@ -2462,9 +2406,6 @@ gallery:after{
     .open_menu {
         margin-top: 40px;
     }
-    .hero_banner {
-        height: 170px;
-    }
     .feature_items_box {
         margin-top: 20px;
     }
@@ -2484,9 +2425,6 @@ gallery:after{
 }
 
 @media(max-width: 375px){
-    .hero_banner {
-        height: 140px;
-    }
     .social_box {
         margin: 0;
         padding: 22px 0;
