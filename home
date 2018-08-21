@@ -10,7 +10,7 @@
             <div class="banner_image" style="background-image: url({{image_url}})"></div>
             <div class="banner_content">
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    content
+                    {{name}}
                 </a>
             </div>
         </div>  
