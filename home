@@ -114,7 +114,8 @@
                 // prevArrow: '.prev',
                 // speed: 500
             });
-            $(".slick-next").html('<i class="fa fa-caret-right"></i>')
+            $(".slick-prev").html("<i class='fa fa-caret-left'></i>")
+            $(".slick-next").html("<i class='fa fa-caret-right'></i>")
             
             show_content();
             
