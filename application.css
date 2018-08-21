@@ -50,6 +50,17 @@ body{
             text-transform: uppercase;
             text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
         }
+        .banner_btn {
+            font-weight: 100;
+            font-size: 22px;
+            color: white;
+            letter-spacing: 0.35px;
+            border: 1px solid white;
+            padding: 15px 35px 20px;
+            display: inline-block;
+            background: transparent;
+            line-height: 22px;
+        }
     }
     
 }
