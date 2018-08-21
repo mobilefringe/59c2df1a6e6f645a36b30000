@@ -86,10 +86,12 @@
                                     <input class="form-control margin_30" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="5"/>
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                
+                                </div>
+                                <div class="col-md-6"></div>
+                            </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
