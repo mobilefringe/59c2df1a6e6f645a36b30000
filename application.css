@@ -52,14 +52,16 @@ body{
             text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
         }
         .banner_btn {
+            padding: 16px 35px 16px;
+            display: inline-block;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.6);
+            
             font-weight: 100;
             font-size: 22px;
-            color: white;
+            // color: white;
             letter-spacing: 0.35px;
-            border: 1px solid white;
-            padding: 15px 35px 20px;
-            display: inline-block;
-            background: transparent;
+
             line-height: 22px;
         }
     }
