@@ -75,7 +75,7 @@
                                     <label for="age">Age</label>
                                     <select class="form-control margin_30" id="age" name="contest[age]" tabindex="6">
                                         <option selected disabled>Select Your Age Range</option>
-                                        <option value="0-18">0 - 18</option>
+                                        <option value="0 to 18">0 - 18</option>
                                         <option value="19-25">19 - 25</option>
                                         <option value="26-35">26 - 35</option>
                                         <option value="36-45">36 - 45</option>
