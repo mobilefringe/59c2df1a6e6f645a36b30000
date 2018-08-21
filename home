@@ -4,6 +4,9 @@
     </a>
     <i class="fa fa-remove close_popup"></i>
 </div>
+<div id="home_slider">
+    <div class="banner_container">your content</div>
+</div>
 <div class="hero_banner text-center"></div>
 <div class="content_container main_container">
     <div class="feature_items_box mobile_padding">
@@ -81,7 +84,12 @@
             loadSocialFeeds(render_social)
             renderFeatureItems();
             var today_hours = getTodaysHours();
-            renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours)   
+            renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours);
+
+            $('#home_slider').slick({
+                setting-name: setting-value
+            });
+    
             show_content();
             
             if($.cookie("popup_viewed") != "true"){
