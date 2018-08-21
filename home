@@ -105,6 +105,7 @@
                 autoplay: true,
                 autoplaySpeed: 6000,
                 arrows: true,
+                fade: true,
                 infinite: true,
                 nextArrow: '.next',
                         prevArrow: '.prev',
