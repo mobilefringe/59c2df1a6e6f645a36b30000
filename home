@@ -5,23 +5,18 @@
     <i class="fa fa-remove close_popup"></i>
 </div>
 <div id="home_banner">
-    <!--<div class="prev"></div>-->
-    <!--<div id="banner_container">-->
-        <script id="banner_template" type="x-tmpl-mustache/text">
-            <div class="banner_container">
-                <div class="banner_image" style="background-image: url({{image_url}})"></div>
-                <div class="banner_content">
-                    <h1 class="banner_title">{{name}}</h1>
-                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="banner_btn animated_btn">{{description}}</div>
-                    </a>
-                </div>
-            </div>  
-        </script>
-    <!--</div>-->
-    <!--<div class="next"></div>-->
+    <script id="banner_template" type="x-tmpl-mustache/text">
+        <div class="banner_container">
+            <div class="banner_image" style="background-image: url({{image_url}})"></div>
+            <div class="banner_content">
+                <h1 class="banner_title">{{name}}</h1>
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <div class="banner_btn animated_btn">{{description}}</div>
+                </a>
+            </div>
+        </div>  
+    </script>
 </div>
-<!--<div class="hero_banner text-center"></div>-->
 <div class="content_container main_container">
     <div class="feature_items_box mobile_padding">
         <div class="feature_row">
@@ -104,13 +99,10 @@
             renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours);
 
             $('#home_banner').slick({
-                // autoplay: true,
-                // autoplaySpeed: 6000,
-                // arrows: true,
-                fade: true,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                // fade: true,
                 infinite: true,
-                // nextArrow: '.next',
-                // prevArrow: '.prev',
                 // speed: 500
             });
             $(".slick-prev").html("<i class='fa fa-caret-left'></i>")
