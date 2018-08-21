@@ -127,7 +127,6 @@
         init(e);
         function renderPageData(){
             var contests = getContestList();
-            console.log(contests)
             var current_contest = [];
             $.each(contests, function(key, val){
                 if(val.show_on_slug === "carlingwood-contest") {
