@@ -108,8 +108,8 @@
                 fade: true,
                 infinite: true,
                 nextArrow: '.next',
-                        prevArrow: '.prev',
-                speed: 500
+                prevArrow: '.prev',
+                // speed: 500
             });
     
             show_content();
