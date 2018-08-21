@@ -11,7 +11,7 @@
             <h5><a href="/events">MALL EVENTS</a></h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/posts">GET THE LOOK</a></h5>
+            <h5><a href="/posts">BLOG</a></h5>
         </div>
         <div class="col-md-3">
             <h5 class="active_heading">CARLINGWOOD TV</h5>
@@ -21,8 +21,8 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/promotions">Promotions</option>
-            <option value="/posts">Get The Look</option>
-            <option value="/pages/carlingwood-tv">Carlingwood TV</option>
+            <option value="/events">Mall Events</option>
+            <option value="/posts">Blog</option>
         </select>
     </h5>
 </div>
