@@ -3,27 +3,27 @@
     <h3>Contest</h3>
     <p>explore • enjoy • shop</p>
 </div>
-<div class="store_list_head main_container">
-    <div class="row hidden_phone">
-        <div class="col-md-4">
-            <h5><a href="/promotions">PROMOTIONS</a></h5>
-        </div>
-        <div class="col-md-4">
-            <h5><a href="/events">EVENTS</a></h5>
-        </div>
-        <div class="col-md-4">
-            <h5 class="active_heading">CONTEST</h5>
-        </div>
-    </div>
-    <h5 class="text-center tap_here show_phone">
-        <select id="option_selector" class="link_selector">
-            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/promotions">Promotions</option>
-            <option value="/events">Events</option>
-            <option class="contest_link" value="/contests">Contest</option>
-        </select>
-    </h5>
-</div>
+<!--<div class="store_list_head main_container">-->
+<!--    <div class="row hidden_phone">-->
+<!--        <div class="col-md-4">-->
+<!--            <h5><a href="/promotions">PROMOTIONS</a></h5>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--            <h5><a href="/events">EVENTS</a></h5>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--            <h5 class="active_heading">CONTEST</h5>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <h5 class="text-center tap_here show_phone">-->
+<!--        <select id="option_selector" class="link_selector">-->
+<!--            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>-->
+<!--            <option value="/promotions">Promotions</option>-->
+<!--            <option value="/events">Events</option>-->
+<!--            <option class="contest_link" value="/contests">Contest</option>-->
+<!--        </select>-->
+<!--    </h5>-->
+<!--</div>-->
  <div class="content_container main_container">
     <div class="margin_25_across">
         <div class="row">
@@ -169,17 +169,10 @@
             var contest_data = {};
             contest_data.first_name = $('#first_name').val();
             contest_data.last_name = $('#last_name').val();
-            // contest_data.mailing_address = $('#address').val();
-            // contest_data.city = $('#city').val();
-            // contest_data.province = $('#province').val();
             contest_data.postal_code = $('#postal_code').val();
             contest_data.phone = $('#phone').val();
             contest_data.age = $('#age').val();
             contest_data.email = $('#email').val();
-            // var charity = $('#charity').val();
-            // var essay = $('#essay').val();
-            // var note = charity + ": " + essay
-            // contest_data.notes = note
             contest_data.newsletter = $('#newsletter_signup').prop("checked");
             console.log("contest_data", contest_data)
             contest_entry.contest = contest_data;
