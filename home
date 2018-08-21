@@ -107,11 +107,11 @@
             $('#home_banner').slick({
                 // autoplay: true,
                 // autoplaySpeed: 6000,
-                arrows: true,
+                // arrows: true,
                 fade: true,
                 infinite: true,
-                nextArrow: '.next',
-                prevArrow: '.prev',
+                // nextArrow: '.next',
+                // prevArrow: '.prev',
                 // speed: 500
             });
     
