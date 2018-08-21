@@ -114,7 +114,8 @@
                 // prevArrow: '.prev',
                 // speed: 500
             });
-    
+            $(".slick-next").html('<i class="fas fa-caret-right"></i>')
+            
             show_content();
             
             if($.cookie("popup_viewed") != "true"){
