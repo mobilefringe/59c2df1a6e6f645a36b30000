@@ -5,6 +5,7 @@
     <i class="fa fa-remove close_popup"></i>
 </div>
 <div id="home_banner">
+    <div class="prev"></div>
     <script id="banner_template" type="x-tmpl-mustache/text">
         <div class="banner_container">
             <div class="banner_image" style="background-image: url({{image_url}})"></div>
@@ -15,6 +16,7 @@
             </div>
         </div>  
     </script>
+    <div class="next"></div>
 </div>
 <div class="hero_banner text-center"></div>
 <div class="content_container main_container">
@@ -102,7 +104,10 @@
             $('#home_banner').slick({
                 autoplay: true,
                 autoplaySpeed: 6000,
+                arrows: true,
                 infinite: true,
+                nextArrow: '.next',
+                        prevArrow: '.prev'
                 slidesToShow: 1,
                 slidesToScroll: 1
             });
