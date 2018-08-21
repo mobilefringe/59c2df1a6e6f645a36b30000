@@ -1678,6 +1678,9 @@ gallery:after{
 }
 
 @media(max-width: 768px){
+    .banner_container .banner_content .banner_title {
+        font-size: 42px;
+    }
     .popup_home img {
         min-width: 490px;
     }
