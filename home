@@ -5,8 +5,8 @@
     <i class="fa fa-remove close_popup"></i>
 </div>
 <div id="home_banner">
-    <div class="prev"></div>
-    <div id="banner_container">
+    <!--<div class="prev"></div>-->
+    <!--<div id="banner_container">-->
         <script id="banner_template" type="x-tmpl-mustache/text">
             <div class="banner_container">
                 <div class="banner_image" style="background-image: url({{image_url}})"></div>
@@ -18,8 +18,8 @@
                 </div>
             </div>  
         </script>
-    </div>
-    <div class="next"></div>
+    <!--</div>-->
+    <!--<div class="next"></div>-->
 </div>
 <!--<div class="hero_banner text-center"></div>-->
 <div class="content_container main_container">
@@ -97,7 +97,7 @@
         function renderAll(){
             var banners = getBanners();
             console.log("banners", banners)
-            renderBanner('#banner_container', '#banner_template', banners);
+            renderBanner('#home_banner', '#banner_template', banners);
             
             loadSocialFeeds(render_social)
             renderFeatureItems();
