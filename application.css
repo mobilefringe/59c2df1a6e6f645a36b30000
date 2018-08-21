@@ -92,22 +92,12 @@ body{
     }
 }
 .slick-prev {
-    left: 0;
-    
+    left: 40px;
 }
 .slick-next {
-    right: 0;
-    // &:after {
-    //     content: '\f0da';
-    //     font-family: FontAwesome;
-    //     font-size: 2.75rem;
-    //     font-weight: normal;
-    //     font-style: normal;
-    //     color: #FFF;    
-    //     font-family: Font Awesome\ 5 Free;
-    //     font-weight: 900;
-    // } 
+    right: 40px;
 }
+
 .bulletin{
     background: rgb(215,0,16);
     color: #fff;
