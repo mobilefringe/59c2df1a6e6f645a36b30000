@@ -229,6 +229,7 @@ a {
     background: $primary;
     height: 235px;
     width: 235px;
+    position: relative;
     display: inline-block;
     float: left;
     color: #FFFFFF;
