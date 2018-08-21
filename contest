@@ -71,23 +71,21 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label for="postal_code">Postal Code</label>  
-                                    <input class="form-control margin_30" id="postal_code" name="contest[postal_code]" type="text" tabindex="3"/>    
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone">Phone Number</label>  
-                                    <input class="form-control margin_30" id="phone" name="contest[phone]" type="text" tabindex="4"/>
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-md-12">    
                                     <label for="email">Email *</label> 
-                                    <input class="form-control margin_30" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="5"/>
+                                    <input class="form-control margin_30" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <label for="postal_code">Postal Code</label>  
+                                    <input class="form-control margin_30" id="postal_code" name="contest[postal_code]" type="text" tabindex="4"/>    
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="phone">Phone Number</label>  
+                                    <input class="form-control margin_30" id="phone" name="contest[phone]" type="text" tabindex="5"/>
+                                </div>
+                                <div class="col-md-4">
                                     <label for="age">Age</label>
                                     <select class="form-control margin_30" id="age" name="contest[age]" tabindex="6">
                                         <option selected disabled>Select Your Age Range</option>
@@ -100,7 +98,6 @@
                                         <option value="65+">65+</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6"></div>
                             </div>
                             <br>
                             <div class="row">
