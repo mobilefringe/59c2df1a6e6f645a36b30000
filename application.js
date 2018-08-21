@@ -44,6 +44,22 @@ function renderBanner(home_banner, banner_template, banners){
     $(home_banner).html(item_rendered.join(''));
 }
 
+function renderContest(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    $.each( collection , function( key, val){
+        val.image_url = "https://www.mallmaverick.com" + val.photo_url;
+        val.property_name = getPropertyDetails().name;
+        
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    
+    $(container).html(item_rendered.join(''));
+}
+
 function renderEvents(container, template, collection, centre){
     var item_list = [];
     var item_rendered = [];
