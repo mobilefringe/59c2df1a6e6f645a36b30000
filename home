@@ -103,7 +103,7 @@
                 autoplaySpeed: 6000,
                 // fade: true,
                 infinite: true,
-                // speed: 500
+                speed: 500
             });
             $(".slick-prev").html("<i class='fa fa-caret-left'></i>")
             $(".slick-next").html("<i class='fa fa-caret-right'></i>")
