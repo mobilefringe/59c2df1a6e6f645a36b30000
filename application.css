@@ -46,6 +46,7 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
         .banner_title {
             text-transform: uppercase;
             text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
