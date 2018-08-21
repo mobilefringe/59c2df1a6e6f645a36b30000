@@ -30,6 +30,15 @@ body{
     font-family:italic;
 }
 
+.banner_container {
+    position: relative;
+    .banner_image {
+        width: 100%;
+        height: 540px;
+        
+    }
+    
+}
 
 .bulletin{
     background: rgb(215,0,16);
@@ -391,7 +400,7 @@ h4 {
 }
 .main_banner{
     background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/5b7c32dc6e6f647948190000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -459,7 +468,7 @@ h4 {
 }
 .hero_banner{
     background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1522264344000/CWD_NewWebsite_Header.jpg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/5b7c32dc6e6f647948190000/image/jpeg/1522264344000/CWD_NewWebsite_Header.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center center;
@@ -504,7 +513,7 @@ h4 {
 
 .jobs_banner{
     background-color: #000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/5b7c32dc6e6f647948190000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -535,7 +544,7 @@ h4 {
 
 .newsletter_banner { 
     background-color:#000;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/5b7c32dc6e6f647948190000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
