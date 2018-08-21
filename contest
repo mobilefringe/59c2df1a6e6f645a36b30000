@@ -103,8 +103,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
-                                        <input id="contest_rules" type="checkbox" name="" required tabindex="7"/> 
-                                        Yes, I have read and agree to the contest rules.
+                                        <input id="newsletter_signup" type="checkbox" name="contest[agree]" tabindex="7"/> 
+                                        Yes, I would like to receive ongoing communications from Carlingwood Mall.
                                     </label>
                                     <br/><br/>
                                 </div>
@@ -112,12 +112,13 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
-                                        <input id="newsletter_signup" type="checkbox" name="contest[agree]" tabindex="8"/> 
-                                        Yes, I would like to receive ongoing communications from Carlingwood Mall.
+                                        <input id="contest_rules" type="checkbox" name="" required tabindex="8"/> 
+                                        Yes, I have read and agree to the contest rules.
                                     </label>
                                     <br/><br/>
                                 </div>
                             </div>
+                            
                             <div class="row">
                                 <div class="col-md-12">
                                     <a href="https://www.mallmaverick.com/system/site_images/photos/000/041/411/original/Give_Back_Giveaway-Rules-Regulations.pdf?1532724334" target="_blank" tabindex="12">View the Contest Rules & Regulations</a>.
