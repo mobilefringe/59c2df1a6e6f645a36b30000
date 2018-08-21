@@ -91,7 +91,7 @@ body{
     left: 0;
     
 }
-.next {
+.slick-next {
     right: 0;
     // &:after {
     //     content: '\f0da';
