@@ -22,7 +22,7 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/promotions">Promotions</option>
             <option value="/events">Mall Events</option>
-            <option value="/posts">Blog</option>
+            <option value="/posts">Carlingwood Blog</option>
         </select>
     </h5>
 </div>
