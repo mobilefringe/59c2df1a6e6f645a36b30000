@@ -37,6 +37,9 @@ body{
         height: 540px;
         
     }
+    .banner_content {
+        position: absolute;
+    }
     
 }
 
