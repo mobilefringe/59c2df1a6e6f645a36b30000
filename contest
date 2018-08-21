@@ -31,13 +31,9 @@
                 <div class="" id="contest_container">
                     <script id="contest_template" type="x-tmpl-mustache">
                         <div class="promo-details">
-                            <div class="event-image">
-                                <img class="contest banner" src="{{image_url}}">
-                            </div>
+                            <img class="contest banner" src="{{image_url}}">
                             <br>
-                            <div class="event-description">
-                                {{{ rich_description }}}
-                            </div>
+                            <div>{{{ rich_description }}}</div>
                             <br>
                         </div> 
                         <form id="contest_form">
