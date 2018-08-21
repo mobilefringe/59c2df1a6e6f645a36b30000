@@ -103,7 +103,16 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
-                                        <input id="newsletter_signup" type="checkbox" name="contest[agree]" required tabindex="11"/> 
+                                        <input id="contest_rules" type="checkbox" name="" required tabindex="7"/> 
+                                        Yes, I have read and agree to the contest rules.
+                                    </label>
+                                    <br/><br/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="agree">
+                                        <input id="newsletter_signup" type="checkbox" name="contest[agree]" tabindex="8"/> 
                                         Yes, I have read and agree to the contest rules.
                                     </label>
                                     <br/><br/>
@@ -142,20 +151,7 @@
             renderContest("#contest_container", '#contest_template', current_contest);
 
             show_content();
-            
-            // $("#essay").on('keyup', function() {
-            //     var words = this.value.match(/\S+/g).length;
-            //     if (words > 500) {
-            //         // Split the string on first 500 words and rejoin on spaces
-            //         var trimmed = $(this).val().split(/\s+/, 500).join(" ");
-            //         // Add a space at the end to keep new typing making new words
-            //         $(this).val(trimmed + " ");
-            //     } else {
-            //         $('#display_count').text(words);
-            //         $('#word_left').text(500-words);
-            //     }
-            // });
-    
+
             $.validate();
             
             $('#contest_form').submit(function(e){
@@ -173,16 +169,17 @@
             var contest_data = {};
             contest_data.first_name = $('#first_name').val();
             contest_data.last_name = $('#last_name').val();
-            contest_data.mailing_address = $('#address').val();
-            contest_data.city = $('#city').val();
-            contest_data.province = $('#province').val();
+            // contest_data.mailing_address = $('#address').val();
+            // contest_data.city = $('#city').val();
+            // contest_data.province = $('#province').val();
             contest_data.postal_code = $('#postal_code').val();
             contest_data.phone = $('#phone').val();
+            contest_data.age = $('#age').val()l;
             contest_data.email = $('#email').val();
-            var charity = $('#charity').val();
-            var essay = $('#essay').val();
-            var note = charity + ": " + essay
-            contest_data.notes = note
+            // var charity = $('#charity').val();
+            // var essay = $('#essay').val();
+            // var note = charity + ": " + essay
+            // contest_data.notes = note
             contest_data.newsletter = $('#agree').prop("checked");
             
             contest_entry.contest = contest_data;
