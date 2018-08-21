@@ -50,8 +50,9 @@ body{
         .banner_title {
             margin: 40px 0;
             font-size: 52px;
+            color: #FFF;
             text-transform: uppercase;
-            text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+            text-shadow: 1px 3px 5px rgba(88, 88, 88, 0.5);
         }
         .banner_btn {
             padding: 16px 35px 16px;
