@@ -150,14 +150,14 @@
             var contests = getContestList();
             console.log(contests)
             var current_contest = [];
-            // $.each(contests, function(key, val){
-            //     if(val.slug === "thepencentre-the-give-back-give-away-contest") {
-            //         current_contest.push(val);
-            //     } 
-            // });
-            // var slug = current_contest[0].slug;
+            $.each(contests, function(key, val){
+                if(val.slug === "carlingwood-contest") {
+                    current_contest.push(val);
+                } 
+            });
+            var slug = current_contest[0].slug;
 
-            // renderContest("#contest_container", '#contest_template', current_contest);
+            renderContest("#contest_container", '#contest_template', current_contest);
 
             show_content();
             
