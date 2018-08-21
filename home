@@ -5,8 +5,16 @@
     <i class="fa fa-remove close_popup"></i>
 </div>
 <div id="home_banner">
-    <div class="banner_image"></div>
-    <div class="banner_content">content</div>
+    <script id="banner_template" type="x-tmpl-mustache/text">
+        <div class="banner_container">
+            <div class="banner_image" style="background-image: url({{image_url}})"></div>
+            <div class="banner_content">
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    content
+                </a>
+            </div>
+        </div>  
+    </script>
 </div>
 <div class="hero_banner text-center"></div>
 <div class="content_container main_container">
@@ -82,6 +90,10 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banners = getBanners();
+            console.log("banners", banners)
+            renderBanner('#home_banner', '#banner_template', banners);
+            
             loadSocialFeeds(render_social)
             renderFeatureItems();
             var today_hours = getTodaysHours();
