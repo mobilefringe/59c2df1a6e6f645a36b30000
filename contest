@@ -3,27 +3,13 @@
     <h3>Contest</h3>
     <p>explore • enjoy • shop</p>
 </div>
-<!--<div class="store_list_head main_container">-->
-<!--    <div class="row hidden_phone">-->
-<!--        <div class="col-md-4">-->
-<!--            <h5><a href="/promotions">PROMOTIONS</a></h5>-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--            <h5><a href="/events">EVENTS</a></h5>-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--            <h5 class="active_heading">CONTEST</h5>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <h5 class="text-center tap_here show_phone">-->
-<!--        <select id="option_selector" class="link_selector">-->
-<!--            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>-->
-<!--            <option value="/promotions">Promotions</option>-->
-<!--            <option value="/events">Events</option>-->
-<!--            <option class="contest_link" value="/contests">Contest</option>-->
-<!--        </select>-->
-<!--    </h5>-->
-<!--</div>-->
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-12">
+            <h5><a href="/promotions">PROMOTIONS</a></h5>
+        </div>
+    </div>
+</div>
  <div class="content_container main_container">
     <div class="margin_25_across">
         <div class="row">
