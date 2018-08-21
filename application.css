@@ -89,10 +89,10 @@ body{
     }
 }
 .slick-prev {
-    left: 40px;
+    left: 25px;
 }
 .slick-next {
-    right: 40px;
+    right: 0px;
 }
 
 .bulletin{
