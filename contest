@@ -180,7 +180,7 @@
             // var essay = $('#essay').val();
             // var note = charity + ": " + essay
             // contest_data.notes = note
-            contest_data.newsletter = $('#agree').prop("checked");
+            contest_data.newsletter = $('#newsletter_signup').prop("checked");
             console.log("contest_data", contest_data)
             contest_entry.contest = contest_data;
             // var propertyDetails = getPropertyDetails();
