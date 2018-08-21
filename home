@@ -107,7 +107,7 @@
                 arrows: true,
                 infinite: true,
                 nextArrow: '.next',
-                        prevArrow: '.prev'
+                        prevArrow: '.prev',
                 slidesToShow: 1,
                 slidesToScroll: 1
             });
