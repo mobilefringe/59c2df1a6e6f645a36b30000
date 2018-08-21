@@ -10,7 +10,7 @@ function renderAddress(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-function renderBanner(banner_template,home_banner,banners){
+function renderBanner(home_banner, banner_template, banners){
     var item_list = [];
     var item_rendered = [];
     var banner_template_html = $(banner_template).html();
