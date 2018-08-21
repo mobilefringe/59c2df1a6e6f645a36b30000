@@ -10,8 +10,9 @@
         <div class="banner_container">
             <div class="banner_image" style="background-image: url({{image_url}})"></div>
             <div class="banner_content">
+                <h1>{{name}}
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    {{name}}
+                    <div class="banner_btn">{{description}}</div>
                 </a>
             </div>
         </div>  
