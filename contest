@@ -6,7 +6,7 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-12">
-            <h5><a href="/promotions">PROMOTIONS</a></h5>
+            <h5 class="active_heading">CONTEST</h5>
         </div>
     </div>
 </div>
@@ -106,9 +106,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <a href="https://www.mallmaverick.com/system/site_images/photos/000/041/411/original/Give_Back_Giveaway-Rules-Regulations.pdf?1532724334" target="_blank" tabindex="12">View the Contest Rules & Regulations</a>.
+                                    <a href="/pages/carlingwood-contest-rules-regulations" target="_blank" tabindex="9">View the Contest Rules & Regulations</a>.
                                     <br/><br/>
-                                    <button class="contest_btn animated_btn newsletter_btn" tabindex="13">Submit</button>
+                                    <button class="contest_btn animated_btn newsletter_btn" tabindex="10">Submit</button>
                                     <br/><br/>
                                     <br/><br/>
                                 </div>
