@@ -151,7 +151,7 @@
             console.log(contests)
             var current_contest = [];
             $.each(contests, function(key, val){
-                if(val.slug === "carlingwood-contest") {
+                if(val.show_on_slug === "carlingwood-contest") {
                     current_contest.push(val);
                 } 
             });
