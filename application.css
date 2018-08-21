@@ -60,13 +60,10 @@ body{
             display: inline-block;
             border: 1px solid #FFF;
             background: #FFF;
-            
             font-weight: 100;
             font-size: 22px;
-            // color: white;
-            letter-spacing: 0.35px;
-
             line-height: 22px;
+            letter-spacing: 0.35px;
             &:hover {
                 color: #FFF;    
             }
