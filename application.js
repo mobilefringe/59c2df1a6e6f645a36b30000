@@ -47,6 +47,7 @@ function renderBanner(home_banner, banner_template, banners){
         var repo_rendered = Mustache.render(banner_template_html,val);
         item_rendered.push(repo_rendered);
     });
+    
     $(home_banner).html(item_rendered.join(''));
 }
 
