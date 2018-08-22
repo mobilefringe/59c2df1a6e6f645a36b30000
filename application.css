@@ -1642,8 +1642,8 @@ gallery:after{
         font-size: 22px;
     }
     .help-block {
-        margin-top: -14px;
-        margin-bottom: 0;
+        margin-top: -20px;
+        margin-bottom: 20;
         font-size: 16px;
     }    
 }
