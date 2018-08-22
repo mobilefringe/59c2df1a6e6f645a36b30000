@@ -1671,7 +1671,9 @@ gallery:after{
 .promo_details_container{
     margin-top:25px;
 }
-
+.contest_description {
+    line-height: 32px;
+}
 #contest_form {
     label {
         margin-top: 5px;
