@@ -143,7 +143,6 @@
                 e.preventDefault();
                 $('.contest_btn').prop('disabled', true);
                 submit_contest(slug, e);
-                $('html, body').animate({scrollTop : 0},800);
             });
         }
         
@@ -172,19 +171,20 @@
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
-            // $.post(action, postData, function(data){
-            //     if(data.message == "success"){
-            //         if ($("#newsletter_signup").is(':checked')) {
-            //             e.target.submit();
-            //         }
-            //         $('#succes_msg').show();
-            //         $('.contest_btn').prop('disabled', false);
-            //         $('#contest_form').trigger('reset');
-            //     } else {
-            //         alert('An error occured while processing your request. Please try again later!')
-            //         $('#error_msg').show();
-            //     }
-            // });
+            $.post(action, postData, function(data){
+                if(data.message == "success"){
+                    if ($("#newsletter_signup").is(':checked')) {
+                        e.target.submit();
+                    }
+                    $('#succes_msg').show();
+                    $('.contest_btn').prop('disabled', false);
+                    $('#contest_form').trigger('reset');
+                    $('html, body').animate({scrollTop : 0},800);
+                } else {
+                    alert('An error occured while processing your request. Please try again later!')
+                    $('#error_msg').show();
+                }
+            });
         }
     });
 </script>
