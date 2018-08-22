@@ -173,7 +173,7 @@
 // </form>
 
 
-        function submit_contest(slug) {
+        function submit_contest(slug, e) {
             var formData = $('#contest_form').serializeObject();
             var postData = {};
             postData.json = JSON.stringify(formData);
