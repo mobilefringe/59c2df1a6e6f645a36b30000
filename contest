@@ -187,7 +187,7 @@
             tempData["Postal Code"] = $("#postal_code").val();
             tempData["Phone Number"] = $("#phone").val();
             tempData["Age Range"] = $("#selected_age").val();
-            tempData["Newsletter"]
+            tempData["Newsletter"] = $("#newsletter_signup").val();
             var postData = {};
             postData.json = JSON.stringify(tempData);
             // console.log("postData", postData)
