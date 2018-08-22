@@ -170,8 +170,8 @@
             contest_data.last_name = $('#last_name').val();
             contest_data.postal_code = $('#postal_code').val();
             contest_data.phone = $('#phone').val();
-            var age = $('#age').val().toString();
-            contest_data.age = age;
+            // var age = $('#age').val().toString();
+            contest_data.age = $("#selected_age");
             contest_data.email = $('#email').val();
             contest_data.newsletter = $('#newsletter_signup').prop("checked");
             console.log("contest_data", contest_data)
