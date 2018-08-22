@@ -1155,12 +1155,12 @@ h4 {
     padding-bottom: 24px;
 }
 
-.details_desc{
+.details_desc, .details_desc p, .details_desc p span {
     font-size: 24px;
     color: #5F574B;
     line-height: 36px;
     font-weight: 100;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .promo_item{
