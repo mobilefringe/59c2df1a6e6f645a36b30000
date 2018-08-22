@@ -160,25 +160,32 @@
             tempData["Postal Code"] = $("#postal_code").val();
             tempData["Phone Number"] = $("#phone").val();
             tempData["Age Range"] = $("#selected_age").val();
-            tempData["Newsletter"] = $("#newsletter_signup").val();
+            var newsletter = "";
+            if ($("#newsletter_signup").is(':checked')) {
+              newsletter = "Yes!";
+            } else {
+              newsletter = "No";
+            }
+            tempData["Subscribe to Newsletter"] = newsletter
             var postData = {};
             postData.json = JSON.stringify(tempData);
+            console.log("postData.json", postData.json)
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
-            $.post(action, postData, function(data){
-                if(data.message == "success"){
-                    if ($("#newsletter_signup").is(':checked')) {
-                        e.target.submit();
-                    }
-                    $('#succes_msg').show();
-                    $('.contest_btn').prop('disabled', false);
-                    $('#contest_form').trigger('reset');
-                } else {
-                    alert('An error occured while processing your request. Please try again later!')
-                    $('#error_msg').show();
-                }
-            });
+            // $.post(action, postData, function(data){
+            //     if(data.message == "success"){
+            //         if ($("#newsletter_signup").is(':checked')) {
+            //             e.target.submit();
+            //         }
+            //         $('#succes_msg').show();
+            //         $('.contest_btn').prop('disabled', false);
+            //         $('#contest_form').trigger('reset');
+            //     } else {
+            //         alert('An error occured while processing your request. Please try again later!')
+            //         $('#error_msg').show();
+            //     }
+            // });
         }
     });
 </script>
