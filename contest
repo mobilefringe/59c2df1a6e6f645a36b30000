@@ -206,7 +206,7 @@
                 var propertyDetails = getPropertyDetails();
                 var host = propertyDetails.mm_host.replace("http:", "");
                 var action = host + "/contests/" + slug + "/json_entry"
-                $.post(action, post_data, function(data){
+                $.post(action, postData, function(data){
                     if(data.message == "success"){
                         $('#succes_msg').show();
                         $('.contest_btn').prop('disabled', false);
