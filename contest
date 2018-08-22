@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="age">Age</label>
-                                    <select class="form-control margin_30" id="age" name="json[age]" tabindex="6">
+                                    <select class="form-control margin_30" id="age" tabindex="6">
                                         <option selected disabled>Select Your Age Range</option>
                                         <option value="0 to 18">0 - 18</option>
                                         <option value="19-25">19 - 25</option>
@@ -198,32 +198,32 @@
                 // var formData = new FormData($(this)[0]);
                 // var formData = JSON.stringify($("#contest_form").serialize());
                 var formData = $('#contest_form').serializeObject();
-                var post_data = {};
-                post_data.json = JSON.stringify(formData);
+                var postData = {};
+                postData.json = JSON.stringify(formData);
                     
                 console.log("formData", formData)
                 
                 var propertyDetails = getPropertyDetails();
                 var host = propertyDetails.mm_host.replace("http:", "");
                 var action = host + "/contests/" + slug + "/json_entry"
-                // $.ajax({
-                //     url: action,
-                //     cache: false,
-                //     type: 'POST',
-                //     data : formData,
-                //     processData: false,
-                //     contentType: false,
-                //     success: function(json){
-                //         $('#succes_msg').show();
-                //         $('.contest_btn').prop('disabled', false);
-                //         $('#contest_form').trigger('reset');
-                //     },
-                //     error: function (json){
-                //         alert('An error occured while processing your request. Please try again later!')
-                //         $('#error_msg').show();
-                //     }
-                // });
-            // });
+                $.ajax({
+                    url: action,
+                    cache: false,
+                    type: 'POST',
+                    data : postData,
+                    processData: false,
+                    contentType: false,
+                    success: function(json){
+                        $('#succes_msg').show();
+                        $('.contest_btn').prop('disabled', false);
+                        $('#contest_form').trigger('reset');
+                    },
+                    error: function (json){
+                        alert('An error occured while processing your request. Please try again later!')
+                        $('#error_msg').show();
+                    }
+                });
+            });
         }
     });
 </script>
