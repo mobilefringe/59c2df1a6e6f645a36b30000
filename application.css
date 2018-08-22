@@ -507,13 +507,13 @@ h4 {
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         font-size: 54px;
-        color: black;
+        color: #000;
         letter-spacing: 4px;
         text-transform: uppercase;
     }
-    p{
+    p {
         font-size: 24px;
-        color: black;
+        color: #000;
         letter-spacing: 0.5px;
         font-family: 'Open Sans Condensed';
         text-transform: uppercase;
