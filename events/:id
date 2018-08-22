@@ -48,7 +48,6 @@
             </div>
         </script>
     </div>
-    <div class="divider"></div>
 </div>
 <script>
     $(document).ready(function(e){
