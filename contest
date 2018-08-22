@@ -148,7 +148,7 @@
                 selected = selected[0]
                 var selectedRange = $(selected).val();
                 console.log(selectedRange)
-                $("#selected_age").val(); = selectedRange
+                $("#selected_age").val() = selectedRange
                 // var href = "/posts?category=" + selectedCat
                 // document.location.href = href;
             });
