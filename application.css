@@ -1691,8 +1691,9 @@ gallery:after{
     .agree {
         font-size: 20px;
     }
-    input[type="checkbox"] {
-        margin-right: 5px;
+    #newsletter_signup, #contest_rules {
+        margin: 5px 5px 0 0;
+        vertical-align: top;
     }
 }
 
