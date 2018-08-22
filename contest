@@ -200,19 +200,20 @@
                 var formData = new FormData($(this)[0]);
                 console.log("formData", formData)
                 var action = host + "/contests/" + slug + "/json_entry"
+                console.log(action)
                 $.ajax({
                     url: action,
-                    // cache: false,
+                    cache: false,
                     type: 'POST',
                     data : formData,
-                    // processData: false,
-                    // contentType: false,
-                    success: function(data){
+                    processData: false,
+                    contentType: false,
+                    success: function(json){
                         $('#succes_msg').show();
                         $('.contest_btn').prop('disabled', false);
                         $('#contest_form').trigger('reset');
                     },
-                    error: function (data){
+                    error: function (json){
                         alert('An error occured while processing your request. Please try again later!')
                         $('#error_msg').show();
                     }
