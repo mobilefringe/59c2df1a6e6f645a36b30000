@@ -49,12 +49,13 @@
                                 <div class="col-md-6">
                                     <label for="last_name">Last Name *</label>  
                                     <input class="form-control margin_30" id="last_name" name="Last Name" type="text" required data-validation="required" tabindex="2"/>
+                                    <input class="" id="fieldName" name="cm-name" type="text" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">    
                                     <label for="fieldEmail">Email *</label> 
-                                    <input class="form-control margin_30" id="fieldEmail" name="Email Address" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                                    <input class="form-control margin_30" id="fieldEmail" name="cm-yujthl-yujthl" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                                 </div>
                             </div>
                             <div class="row">
