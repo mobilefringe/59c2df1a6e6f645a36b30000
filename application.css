@@ -492,6 +492,7 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat; 
     .contest_banner_container {
+        width: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1762,7 +1763,7 @@ gallery:after{
        border-bottom:1px solid #979797;
        padding-bottom: 24px !important;
     }
-    .main_banner, .jobs_banner, .newsletter_banner, .contest_banner{
+    .main_banner, .jobs_banner, .newsletter_banner, .contest_banner {
         h3 {
             font-size: 28px;
         }
