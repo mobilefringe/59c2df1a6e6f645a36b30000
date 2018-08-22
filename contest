@@ -184,7 +184,7 @@
             var first_name = $("#first_name").val();
             var last_name = $("#last_name").val();
             $("#fieldName").val(first_name +" " + last_name);
-            // console.log($("#fieldName").val())
+            console.log("Field Name", $("#fieldName").val())
             var tempData = {};
             tempData["First Name"] = $("#first_name").val();
             tempData["Last Name"] = $("#last_name").val();
