@@ -91,7 +91,7 @@
                                 <div class="col-md-12">
                                     <label class="agree">
                                         <input id="contest_rules" type="checkbox" name="" required tabindex="8"/> 
-                                        Yes, I have read and agree to the <a href="/pages/carlingwood-contest-rules-regulations" target="_blank">Contest Rules</a>.
+                                        Yes, I have read and agree to the <a href="/pages/carlingwood-contest-rules-regulations" target="_blank">Contest Rules & Regulations</a>.
                                     </label>
                                     <br/>
                                 </div>
