@@ -1677,6 +1677,7 @@ gallery:after{
 #contest_form {
     label {
         margin-top: 5px;
+        font-weight: normal;
     }
     .form-control {
         padding: 0 12px;
