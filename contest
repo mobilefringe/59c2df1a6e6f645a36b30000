@@ -40,17 +40,15 @@
                             </div>
                             <br>
                         </div> 
-                        <form id="contest_form">
-                            
-                            
+                        <form id="contest_form" action="https://mobilefringe.createsend.com/t/d/s/yujthl/">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="first_name">First Name *</label>  
-                                    <input class="form-control margin_30" id="first_name" name="First Name" type="text" required data-validation="required" tabindex="1"/>
+                                    <label for="fieldName">First Name *</label>  
+                                    <input class="form-control margin_30" id="fieldName" name="First Name" type="text" required data-validation="required" tabindex="1"/>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="last_name">Last Name *</label>  
-                                    <input class="form-control margin_30" id="last_name" name="Last Name" type="text" required data-validation="required" tabindex="2"/>
+                                    <label for="fieldEmail">Last Name *</label>  
+                                    <input class="form-control margin_30" id="fieldEmail" name="Last Name" type="text" required data-validation="required" tabindex="2"/>
                                 </div>
                             </div>
                             <div class="row">
@@ -156,6 +154,25 @@
         
         loadMallDataCached(renderPageData);
         
+        
+//         <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AC8D6AD5799FBF32C09A6DABDB83EC111406B14A417C2DBCEDF2524ABFD68AAC815680B1A90F71C0FFF362360E6CE0F8B">	
+// <p>
+//     <label for="fieldName">Name</label>
+//     <br />
+//     <input id="fieldName" name="cm-name" type="text" />
+// </p>
+// <p>
+//     <label for="fieldEmail">Email</label>
+//     <br />
+//     <input id="fieldEmail" name="cm-yujthl-yujthl" type="email" class="js-cm-email-input"
+//     required />
+// </p>
+// <p>
+//     <button class="js-cm-submit-button" type="submit">Subscribe</button>
+// </p>
+// </form>
+
+
         function submit_contest(slug) {
             var formData = $('#contest_form').serializeObject();
             var postData = {};
