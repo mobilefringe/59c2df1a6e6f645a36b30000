@@ -391,12 +391,13 @@ h4 {
     font-weight: lighter;
 }
 
-.fixed_header{
-    position: fixed;
+.fixed_header {
     width: 100%;
-    background: #fff;
+    height: 98px;
+    position: fixed;
+    top: 0;
     z-index: 9;
-    top:0;
+    background: #fff;
 }
 
 
