@@ -41,35 +41,32 @@
                             <br>
                         </div> 
                         <form id="contest_form">
-                            <label for="propert_id" style="display:none">Property ID</label>
-                            <input id="propert_id" name="json[property_id]" style="display:none" value="{{property_id}}" />
-                            <label for="contest_id" style="display:none">Contest ID</label>
-                            <input id="contest_id" name="json[contest_id]" style="display:none" value="{{id}}" />
+                            
                             
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="first_name">First Name *</label>  
-                                    <input class="form-control margin_30" id="first_name" name="json[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                                    <input class="form-control margin_30" id="first_name" name="contest[First Name]" type="text" required data-validation="required" tabindex="1"/>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="last_name">Last Name *</label>  
-                                    <input class="form-control margin_30" id="last_name" name="json[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                                    <input class="form-control margin_30" id="last_name" name="contest[Last Name]" type="text" required data-validation="required" tabindex="2"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">    
                                     <label for="email">Email *</label> 
-                                    <input class="form-control margin_30" id="email" name="json[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                                    <input class="form-control margin_30" id="email" name="contest[Email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <label for="postal_code">Postal Code</label>  
-                                    <input class="form-control margin_30" id="postal_code" name="json[postal_code]" type="text" tabindex="4"/>    
+                                    <input class="form-control margin_30" id="postal_code" name="contest[Postal Code]" type="text" tabindex="4"/>    
                                 </div>
                                 <div class="col-md-4">
                                     <label for="phone">Phone Number</label>  
-                                    <input class="form-control margin_30" id="phone" name="json[phone]" type="text" tabindex="5"/>
+                                    <input class="form-control margin_30" id="phone" name="contest[Phone Number]" type="text" tabindex="5"/>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="age">Age</label>
@@ -83,14 +80,14 @@
                                         <option value="56-65">56 - 65</option>
                                         <option value="65+">65+</option>
                                     </select>
-                                    <input  id="selected_age" name="json[age]" type="text" />
+                                    <input  id="selected_age" name="contest[Age Range]" type="text" />
                                 </div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
-                                        <input id="newsletter_signup" type="checkbox" name="json[newsletter]" tabindex="7"/> 
+                                        <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="7"/> 
                                         Yes, I would like to receive ongoing communications from Carlingwood Mall.
                                     </label>
                                     <br/><br/>
@@ -123,6 +120,11 @@
         </div>
     </div>
 </div>
+
+<!--<label for="propert_id" style="display:none">Property ID</label>-->
+<!--                            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />-->
+<!--                            <label for="contest_id" style="display:none">Contest ID</label>-->
+<!--                            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />-->
 <script>
     $(document).ready(function(e) {
         init(e);
