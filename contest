@@ -198,7 +198,7 @@
                 if(data.message == "success"){
                     if ($("#newsletter_signup").is(':checked')) {
                         console.log("Selected!")
-                        // e.target.submit();
+                        e.target.submit();
                     }
                     $('#succes_msg').show();
                     $('.contest_btn').prop('disabled', false);
