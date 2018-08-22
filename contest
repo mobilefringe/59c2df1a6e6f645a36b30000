@@ -206,23 +206,34 @@
                 var propertyDetails = getPropertyDetails();
                 var host = propertyDetails.mm_host.replace("http:", "");
                 var action = host + "/contests/" + slug + "/json_entry"
-                $.ajax({
-                    url: action,
-                    cache: false,
-                    type: 'POST',
-                    data : postData,
-                    processData: false,
-                    contentType: false,
-                    success: function(json){
+                $.post(action, post_data, function(data){
+                    if(data.message == "success"){
                         $('#succes_msg').show();
                         $('.contest_btn').prop('disabled', false);
                         $('#contest_form').trigger('reset');
-                    },
-                    error: function (json){
+                    } else {
                         alert('An error occured while processing your request. Please try again later!')
                         $('#error_msg').show();
                     }
                 });
+                    
+                // $.ajax({
+                //     url: action,
+                //     cache: false,
+                //     type: 'POST',
+                //     data : postData,
+                //     processData: false,
+                //     contentType: false,
+                //     success: function(json){
+                //         $('#succes_msg').show();
+                //         $('.contest_btn').prop('disabled', false);
+                //         $('#contest_form').trigger('reset');
+                //     },
+                //     error: function (json){
+                //         alert('An error occured while processing your request. Please try again later!')
+                //         $('#error_msg').show();
+                //     }
+                // });
             // });
         }
     });
