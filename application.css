@@ -487,13 +487,11 @@ h4 {
 
 .contest_banner {
     height: 248px;
-    // background-color: #000;
     position: relative;
     background-image: url(//codecloud.cdn.speedyrails.net/sites/5b7c32dc6e6f647948190000/image/jpeg/1523653240000/CWD_NewWebsite_Header_NoText_preview.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
-    // padding: 0px 0px 85px 0;
     .contest_banner_container {
         position: absolute;
         top: 50%;
