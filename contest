@@ -175,11 +175,16 @@
 
 
         function submit_contest(slug, e) {
+            if ($("#newsletter_signup").attr('checked')) {
+                        console.log("Selected!")
+                        // e.target.submit();
+                    }
+                    
             // var formData = $('#contest_form').serializeObject();
             var first_name = $("#first_name").val();
             var last_name = $("#last_name").val();
             $("#fieldName").val(first_name +" " + last_name);
-            console.log($("#fieldName").val())
+            // console.log($("#fieldName").val())
             var tempData = {};
             tempData["First Name"] = $("#first_name").val();
             tempData["Last Name"] = $("#last_name").val();
@@ -190,18 +195,10 @@
             tempData["Newsletter"]
             var postData = {};
             postData.json = JSON.stringify(tempData);
-            console.log("postData", postData)
+            // console.log("postData", postData)
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
-            
-            
-            if ($("#newsletter_signup").attr('checked')) {
-                        console.log("Selected!")
-                        // e.target.submit();
-                    }
-                    
-                    
             // $.post(action, postData, function(data){
             //     if(data.message == "success"){
             //         if ($("#newsletter_signup").attr('checked')) {
