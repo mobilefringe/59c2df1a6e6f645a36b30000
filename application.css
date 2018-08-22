@@ -513,9 +513,9 @@ h4 {
     }
     p {
         font-size: 24px;
+        font-family: 'Open Sans Condensed';
         color: #000;
         letter-spacing: 0.5px;
-        font-family: 'Open Sans Condensed';
         text-transform: uppercase;
     }
 }
