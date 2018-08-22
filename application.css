@@ -1633,6 +1633,22 @@ gallery:after{
     margin-top:25px;
 }
 
+#contest_form {
+    label {
+        margin-top: 5px;
+    }
+    .form-control {
+        padding: 0 12px;
+        font-size: 22px;
+    }
+    .help-block {
+        margin-top: -24px;
+        margin-bottom: 0;
+        font-size: 16px;
+    }    
+}
+
+
 @media(max-width: 768px){
     .banner_container .banner_content .banner_title {
         font-size: 42px;
