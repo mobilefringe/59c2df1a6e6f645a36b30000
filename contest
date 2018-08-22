@@ -147,7 +147,7 @@
             $('#contest_form').submit(function(e){
                 e.preventDefault();
                 $('.contest_btn').prop('disabled', true);
-                submit_contest(slug);
+                submit_contest(slug, e);
                 $('html, body').animate({scrollTop : 0},800);
             });
         }
