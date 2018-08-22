@@ -120,11 +120,6 @@
         </div>
     </div>
 </div>
-
-<!--<label for="propert_id" style="display:none">Property ID</label>-->
-<!--                            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />-->
-<!--                            <label for="contest_id" style="display:none">Contest ID</label>-->
-<!--                            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />-->
 <script>
     $(document).ready(function(e) {
         init(e);
@@ -149,10 +144,7 @@
                 var selected = $("#age option:selected")
                 selected = selected[0]
                 var selectedRange = $(selected).val();
-                console.log(selectedRange)
-                $("#selected_age").val(selectedRange)
-                // var href = "/posts?category=" + selectedCat
-                // document.location.href = href;
+                $("#selected_age").val(selectedRange);
             });
             
             $('#contest_form').submit(function(e){
@@ -166,77 +158,23 @@
         loadMallDataCached(renderPageData);
         
         function submit_contest(slug) {
-            // var contest_entry = {};
-            // var contest_data = {};
-            // contest_data.first_name = $('#first_name').val();
-            // contest_data.last_name = $('#last_name').val();
-            // contest_data.postal_code = $('#postal_code').val();
-            // contest_data.phone = $('#phone').val();
-            // // var age = $('#age').val().toString();
-            // contest_data.age = $("#selected_age").val();
-            // contest_data.email = $('#email').val();
-            // contest_data.newsletter = $('#newsletter_signup').prop("checked");
-            // console.log("contest_data", contest_data)
-            // contest_entry.contest = contest_data;
-            // console.log("contest_entry", contest_entry)
-            // var propertyDetails = getPropertyDetails();
-            // var host = propertyDetails.mm_host.replace("http:", "");
-            // var action = host + "/contests/" + slug + "/create_js_entry"
-            // $.ajax({
-            //     url : action,
-            //     type: "POST",
-            //     data : contest_entry,
-            //     success: function(data){
-            //       $('#succes_msg').show();
-            //       $('.contest_btn').prop('disabled', false);
-            //       $('#contest_form').trigger('reset');
-            //     },
-            //     error: function (data){
-            //         alert('An error occured while processing your request. Please try again later!')
-            //         $('#error_msg').show();
-            //     }
-            // });
-            
-                // var formData = new FormData($(this)[0]);
-                // var formData = JSON.stringify($("#contest_form").serialize());
-                var formData = $('#contest_form').serializeObject();
-                var postData = {};
-                postData.json = JSON.stringify(formData);
-                    
-                console.log("formData", formData)
-                
-                var propertyDetails = getPropertyDetails();
-                var host = propertyDetails.mm_host.replace("http:", "");
-                var action = host + "/contests/" + slug + "/json_entry"
-                $.post(action, postData, function(data){
-                    if(data.message == "success"){
-                        $('#succes_msg').show();
-                        $('.contest_btn').prop('disabled', false);
-                        $('#contest_form').trigger('reset');
-                    } else {
-                        alert('An error occured while processing your request. Please try again later!')
-                        $('#error_msg').show();
-                    }
-                });
-                    
-                // $.ajax({
-                //     url: action,
-                //     cache: false,
-                //     type: 'POST',
-                //     data : postData,
-                //     processData: false,
-                //     contentType: false,
-                //     success: function(json){
-                //         $('#succes_msg').show();
-                //         $('.contest_btn').prop('disabled', false);
-                //         $('#contest_form').trigger('reset');
-                //     },
-                //     error: function (json){
-                //         alert('An error occured while processing your request. Please try again later!')
-                //         $('#error_msg').show();
-                //     }
-                // });
-            // });
+            var formData = $('#contest_form').serializeObject();
+            var postData = {};
+            postData.json = JSON.stringify(formData);
+
+            var propertyDetails = getPropertyDetails();
+            var host = propertyDetails.mm_host.replace("http:", "");
+            var action = host + "/contests/" + slug + "/json_entry"
+            $.post(action, postData, function(data){
+                if(data.message == "success"){
+                    $('#succes_msg').show();
+                    $('.contest_btn').prop('disabled', false);
+                    $('#contest_form').trigger('reset');
+                } else {
+                    alert('An error occured while processing your request. Please try again later!')
+                    $('#error_msg').show();
+                }
+            });
         }
     });
 </script>
