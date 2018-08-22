@@ -43,18 +43,18 @@
                         <form id="contest_form" action="https://mobilefringe.createsend.com/t/d/s/yujthl/">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="fieldName">First Name *</label>  
-                                    <input class="form-control margin_30" id="fieldName" name="First Name" type="text" required data-validation="required" tabindex="1"/>
+                                    <label for="first_name">First Name *</label>  
+                                    <input class="form-control margin_30" id="first_name" name="First Name" type="text" required data-validation="required" tabindex="1"/>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="fieldEmail">Last Name *</label>  
-                                    <input class="form-control margin_30" id="fieldEmail" name="Last Name" type="text" required data-validation="required" tabindex="2"/>
+                                    <label for="last_name">Last Name *</label>  
+                                    <input class="form-control margin_30" id="last_name" name="Last Name" type="text" required data-validation="required" tabindex="2"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">    
-                                    <label for="email">Email *</label> 
-                                    <input class="form-control margin_30" id="email" name="Email Address" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                                    <label for="fieldEmail">Email *</label> 
+                                    <input class="form-control margin_30" id="fieldEmail" name="Email Address" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                                 </div>
                             </div>
                             <div class="row">
@@ -174,27 +174,36 @@
 
 
         function submit_contest(slug, e) {
-            var formData = $('#contest_form').serializeObject();
+            // var formData = $('#contest_form').serializeObject();
+            
+            var tempData = {};
+            tempData["First Name"] = $("#first_name").val();
+            tempData["Last Name"] = $("#last_name").val();
+            tempData["Email Address"] = $("#fieldEmail").val();
+            tempData["Postal Code"] = $("#postal_code").val();
+            tempData["Phone Number"] = $("#phone").val();
+            tempData["Age Range"] = $("#selected_age").val();
+            tempData["Newsletter"]
             var postData = {};
-            postData.json = JSON.stringify(formData);
-
-            var propertyDetails = getPropertyDetails();
-            var host = propertyDetails.mm_host.replace("http:", "");
-            var action = host + "/contests/" + slug + "/json_entry"
-            $.post(action, postData, function(data){
-                if(data.message == "success"){
-                    if ($("#newsletter_signup").attr('checked')) {
-                        console.log("Selected!")
-                        // e.target.submit();
-                    }
-                    $('#succes_msg').show();
-                    $('.contest_btn').prop('disabled', false);
-                    $('#contest_form').trigger('reset');
-                } else {
-                    alert('An error occured while processing your request. Please try again later!')
-                    $('#error_msg').show();
-                }
-            });
+            postData.json = JSON.stringify(tempData);
+            console.log("postData", postData)
+            // var propertyDetails = getPropertyDetails();
+            // var host = propertyDetails.mm_host.replace("http:", "");
+            // var action = host + "/contests/" + slug + "/json_entry"
+            // $.post(action, postData, function(data){
+            //     if(data.message == "success"){
+            //         if ($("#newsletter_signup").attr('checked')) {
+            //             console.log("Selected!")
+            //             // e.target.submit();
+            //         }
+            //         $('#succes_msg').show();
+            //         $('.contest_btn').prop('disabled', false);
+            //         $('#contest_form').trigger('reset');
+            //     } else {
+            //         alert('An error occured while processing your request. Please try again later!')
+            //         $('#error_msg').show();
+            //     }
+            // });
         }
     });
 </script>
