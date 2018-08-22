@@ -1155,12 +1155,19 @@ h4 {
     padding-bottom: 24px;
 }
 
-.details_desc, .details_desc p, .details_desc p span {
+.details_desc,  {
     font-size: 24px;
     color: #5F574B;
     line-height: 36px;
     font-weight: 100;
     margin-bottom: 40px;
+    .details_desc p, .details_desc p span {
+        font-family: 'Open Sans Condensed' !important;
+        font-size: 24px !important;
+        color: #5F574B !important;
+        line-height: 36px !important;
+        font-weight: 100 !important;
+    }
 }
 
 .promo_item{
