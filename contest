@@ -1,6 +1,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <div class="contest_banner text-center">
-    <div class="contest_container">
+    <div class="contest_banner_container">
         <h3>Contest</h3>
         <p>explore • enjoy • shop</p>
     </div>
