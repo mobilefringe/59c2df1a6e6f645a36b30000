@@ -1691,6 +1691,9 @@ gallery:after{
     .agree {
         font-size: 20px;
     }
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
 }
 
 
