@@ -32,6 +32,10 @@ function renderBanner(home_banner, banner_template, banners){
             }
         }
         
+        if (val.name == "" || val.name == null) {
+            val.show_name = "display: none"    
+        }
+        
         if(val.url == "" || val.url == null){
             val.css = "style=cursor:default;";
             val.noLink = "return false";
