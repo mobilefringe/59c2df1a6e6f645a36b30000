@@ -14,39 +14,41 @@
     </h5>
 </div>
 <div class="content_container main_container">
-    <div class="row" id="promo_details_container">
-        <script id="promo_details_template" type="x-tmpl-mustache/text">
-            <div class="col-md-8">
-                <img src="{{image_url}}" alt="Store Logo" class="details_image" />
-                <h2 class="promo_list_name">{{name}}</h2>
-                <p class="promo_dates underline">{{dates}}</p>
-                <p class="show_phone"><span class="promo_store">{{store_name}} </span><a href="/stores/{{store_slug}}" class="read_more">View Store Info</a></p>
-                <p class="show_phone mobile_share_container">
-                    <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/events/{{slug}}" target="_blank">
-                        <img src="//codecloud.cdn.speedyrails.netssets.codecloudapp.com/sites/57f7f01f6e6f647835890000/image/png/1461347327000/fb_share.png" class="" alt="share facebook">
-                    </a>
-                    <a href="https://twitter.com/intent/tweet?url=https://www.carlingwood.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461347344000/tweet.png" class="" alt="tweet">
-                    </a>
-                </p>
-                <div class="details_desc">{{{rich_description}}}</div>
-            </div>
-            <div class="col-md-4 hidden_phone">
-                <img src="{{store_image}}" alt="Store Logo" class="store_logo" />
-                <div class="side_stores">
-                    <a class="animated_btn" href="tel:{{phone}}" style="{{phone_show}}">Phone: {{phone}}</a>
-                    <a class="animated_btn" href="//{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+    <div class="margin_25_across">
+        <div class="row" id="promo_details_container">
+            <script id="promo_details_template" type="x-tmpl-mustache/text">
+                <div class="col-md-8">
+                    <img src="{{image_url}}" alt="Store Logo" class="details_image" />
+                    <h2 class="promo_list_name">{{name}}</h2>
+                    <p class="promo_dates underline">{{dates}}</p>
+                    <p class="show_phone"><span class="promo_store">{{store_name}} </span><a href="/stores/{{store_slug}}" class="read_more">View Store Info</a></p>
+                    <p class="show_phone mobile_share_container">
+                        <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/events/{{slug}}" target="_blank">
+                            <img src="//codecloud.cdn.speedyrails.netssets.codecloudapp.com/sites/57f7f01f6e6f647835890000/image/png/1461347327000/fb_share.png" class="" alt="share facebook">
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url=https://www.carlingwood.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461347344000/tweet.png" class="" alt="tweet">
+                        </a>
+                    </p>
+                    <div class="details_desc">{{{rich_description}}}</div>
                 </div>
-                <div class="share_container">
-                    <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/events/{{slug}}" target="_blank">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461347327000/fb_share.png" class="" alt="share facebook">
-                    </a>
-                    <a href="https://twitter.com/intent/tweet?url=https://www.carlingwood.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461347344000/tweet.png" class="" alt="tweet">
-                    </a>
+                <div class="col-md-4 hidden_phone">
+                    <img src="{{store_image}}" alt="Store Logo" class="store_logo" />
+                    <div class="side_stores">
+                        <a class="animated_btn" href="tel:{{phone}}" style="{{phone_show}}">Phone: {{phone}}</a>
+                        <a class="animated_btn" href="//{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                    </div>
+                    <div class="share_container">
+                        <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/events/{{slug}}" target="_blank">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461347327000/fb_share.png" class="" alt="share facebook">
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url=https://www.carlingwood.com/events/{{slug}}&text={{name}}" target="_blank" data-size="large">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1461347344000/tweet.png" class="" alt="tweet">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </script>
+            </script>
+        </div>
     </div>
 </div>
 <script>
