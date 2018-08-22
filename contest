@@ -98,10 +98,6 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    // <a href="/pages/carlingwood-contest-rules-regulations" target="_blank" tabindex="9">
-                                    //     View the Contest Rules & Regulations
-                                    // </a>
-                                    <br/><br/>
                                     <button class="contest_btn animated_btn newsletter_btn" tabindex="10">Submit</button>
                                     <br/>
                                 </div>
