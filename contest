@@ -154,32 +154,11 @@
         }
         
         loadMallDataCached(renderPageData);
-        
-        
-//         <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AC8D6AD5799FBF32C09A6DABDB83EC111406B14A417C2DBCEDF2524ABFD68AAC815680B1A90F71C0FFF362360E6CE0F8B">	
-// <p>
-//     <label for="fieldName">Name</label>
-//     <br />
-//     <input id="fieldName" name="cm-name" type="text" />
-// </p>
-// <p>
-//     <label for="fieldEmail">Email</label>
-//     <br />
-//     <input id="fieldEmail" name="cm-yujthl-yujthl" type="email" class="js-cm-email-input"
-//     required />
-// </p>
-// <p>
-//     <button class="js-cm-submit-button" type="submit">Subscribe</button>
-// </p>
-// </form>
-
 
         function submit_contest(slug, e) {
-            // var formData = $('#contest_form').serializeObject();
             var first_name = $("#first_name").val();
             var last_name = $("#last_name").val();
             $("#fieldName").val(first_name +" " + last_name);
-            console.log("Field Name", $("#fieldName").val())
             var tempData = {};
             tempData["First Name"] = $("#first_name").val();
             tempData["Last Name"] = $("#last_name").val();
@@ -190,14 +169,12 @@
             tempData["Newsletter"] = $("#newsletter_signup").val();
             var postData = {};
             postData.json = JSON.stringify(tempData);
-            // console.log("postData", postData)
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
             $.post(action, postData, function(data){
                 if(data.message == "success"){
                     if ($("#newsletter_signup").is(':checked')) {
-                        console.log("Selected!")
                         e.target.submit();
                     }
                     $('#succes_msg').show();
