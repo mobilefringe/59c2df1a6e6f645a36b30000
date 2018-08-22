@@ -197,6 +197,8 @@
             
                 var formData = new FormData($(this)[0]);
                 console.log("formData", formData)
+                var propertyDetails = getPropertyDetails();
+                var host = propertyDetails.mm_host.replace("http:", "");
                 var action = host + "/contests/" + slug + "/json_entry"
                 console.log(action)
                 // $.ajax({
