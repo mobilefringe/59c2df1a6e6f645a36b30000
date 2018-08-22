@@ -1738,6 +1738,9 @@ gallery:after{
         height: auto;
         position: relative;
     }
+    .yield {
+        margin-top: 0;
+    }
     .cropped_image{
         width:inherit;
         height:inherit;
