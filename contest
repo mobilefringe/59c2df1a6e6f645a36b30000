@@ -195,7 +195,8 @@
             //     }
             // });
             
-                var formData = new FormData($(this)[0]);
+                // var formData = new FormData($(this)[0]);
+                var formData = $( this ).serialize();
                 console.log("formData", formData)
                 var propertyDetails = getPropertyDetails();
                 var host = propertyDetails.mm_host.replace("http:", "");
