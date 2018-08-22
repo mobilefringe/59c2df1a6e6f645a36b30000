@@ -166,10 +166,9 @@
             } else {
               newsletter = "No";
             }
-            tempData["Subscribe to Newsletter"] = newsletter
+            tempData["Subscribed to Newsletter"] = newsletter
             var postData = {};
             postData.json = JSON.stringify(tempData);
-            console.log("postData.json", postData.json)
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
