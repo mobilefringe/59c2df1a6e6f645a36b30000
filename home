@@ -99,7 +99,7 @@
             renderHomeHours('#home_hours_container2', '#home_hours_template2', today_hours);
 
             $('#home_banner').slick({
-                // autoplay: true,
+                autoplay: true,
                 autoplaySpeed: 6000,
                 // fade: true,
                 infinite: true,
