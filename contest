@@ -175,7 +175,7 @@
 
 
         function submit_contest(slug, e) {
-            if ($("#newsletter_signup").attr('checked')) {
+            if ($("#newsletter_signup").is(':checked')) {
                         console.log("Selected!")
                         // e.target.submit();
                     }
