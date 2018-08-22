@@ -204,8 +204,9 @@ a {
     margin-right:25px;
 }
 
-.yield{
-    display:none;
+.yield {
+    margin-top: 8px;
+    display: none;
 }
 
 .full_width{
