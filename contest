@@ -78,7 +78,6 @@
                                     <input class="hidden_now" id="selected_age" name="Age Range" type="text" />
                                 </div>
                             </div>
-                            <br>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
