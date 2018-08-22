@@ -195,8 +195,6 @@
             //     }
             // });
             
-            $('#contest_form').submit(function(e) {
-                e.preventDefault();
                 var formData = new FormData($(this)[0]);
                 console.log("formData", formData)
                 var action = host + "/contests/" + slug + "/json_entry"
