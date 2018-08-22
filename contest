@@ -83,6 +83,7 @@
                                         <option value="56-65">56 - 65</option>
                                         <option value="65+">65+</option>
                                     </select>
+                                    <input  id="submit_age" name="contest[age]" type="text" />
                                 </div>
                             </div>
                             <br>
