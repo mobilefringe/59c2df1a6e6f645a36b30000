@@ -196,7 +196,7 @@
             // });
             
                 // var formData = new FormData($(this)[0]);
-                var formData = JSON.stringify($("#contest_form").serialize());
+                var formData = JSON.stringify($("#contest_form"));
                 console.log("formData", formData)
                 
                 var propertyDetails = getPropertyDetails();
