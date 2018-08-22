@@ -87,7 +87,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
-                                        <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="7"/> 
+                                        <input id="newsletter_signup" type="checkbox" name="Subscribe to Newsletter" tabindex="7"/> 
                                         Yes, I would like to receive ongoing communications from Carlingwood Mall.
                                     </label>
                                     <br/><br/>
@@ -109,8 +109,7 @@
                                     </a>
                                     <br/><br/>
                                     <button class="contest_btn animated_btn newsletter_btn" tabindex="10">Submit</button>
-                                    <br/><br/>
-                                    <br/><br/>
+                                    <br/>
                                 </div>
                             </div>
                         </form>
