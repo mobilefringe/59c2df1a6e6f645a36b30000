@@ -3,13 +3,7 @@
     <h3>Contest</h3>
     <p>explore • enjoy • shop</p>
 </div>
-<div class="store_list_head main_container">
-    <div class="row hidden_phone">
-        <div class="col-md-12">
-            <h5 class="active_heading">CONTEST</h5>
-        </div>
-    </div>
-</div>
+<div class="margin_30"></div>
  <div class="content_container main_container">
     <div class="margin_25_across">
         <div class="row">
