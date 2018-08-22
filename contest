@@ -196,12 +196,12 @@
             // });
             
                 // var formData = new FormData($(this)[0]);
-                var formData = $( this ).serialize();
+                var formData = $("#contest_form").serialize();
                 console.log("formData", formData)
+                
                 var propertyDetails = getPropertyDetails();
                 var host = propertyDetails.mm_host.replace("http:", "");
                 var action = host + "/contests/" + slug + "/json_entry"
-                console.log(action)
                 // $.ajax({
                 //     url: action,
                 //     cache: false,
