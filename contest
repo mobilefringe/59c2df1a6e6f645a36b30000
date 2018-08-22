@@ -84,23 +84,23 @@
                                         <input id="newsletter_signup" type="checkbox" name="Subscribe to Newsletter" tabindex="7"/> 
                                         Yes, I would like to receive ongoing communications from Carlingwood Mall.
                                     </label>
-                                    <br/><br/>
+                                    <br/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="agree">
                                         <input id="contest_rules" type="checkbox" name="" required tabindex="8"/> 
-                                        Yes, I have read and agree to the contest rules.
+                                        Yes, I have read and agree to the <a href="/pages/carlingwood-contest-rules-regulations" target="_blank">Contest Rules</a>.
                                     </label>
                                     <br/><br/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <a href="/pages/carlingwood-contest-rules-regulations" target="_blank" tabindex="9">
-                                        View the Contest Rules & Regulations
-                                    </a>
+                                    // <a href="/pages/carlingwood-contest-rules-regulations" target="_blank" tabindex="9">
+                                    //     View the Contest Rules & Regulations
+                                    // </a>
                                     <br/><br/>
                                     <button class="contest_btn animated_btn newsletter_btn" tabindex="10">Submit</button>
                                     <br/>
