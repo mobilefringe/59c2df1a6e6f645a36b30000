@@ -194,20 +194,28 @@
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
-            $.post(action, postData, function(data){
-                if(data.message == "success"){
-                    if ($("#newsletter_signup").attr('checked')) {
+            
+            
+            if ($("#newsletter_signup").attr('checked')) {
                         console.log("Selected!")
                         // e.target.submit();
                     }
-                    $('#succes_msg').show();
-                    $('.contest_btn').prop('disabled', false);
-                    $('#contest_form').trigger('reset');
-                } else {
-                    alert('An error occured while processing your request. Please try again later!')
-                    $('#error_msg').show();
-                }
-            });
+                    
+                    
+            // $.post(action, postData, function(data){
+            //     if(data.message == "success"){
+            //         if ($("#newsletter_signup").attr('checked')) {
+            //             console.log("Selected!")
+            //             // e.target.submit();
+            //         }
+            //         $('#succes_msg').show();
+            //         $('.contest_btn').prop('disabled', false);
+            //         $('#contest_form').trigger('reset');
+            //     } else {
+            //         alert('An error occured while processing your request. Please try again later!')
+            //         $('#error_msg').show();
+            //     }
+            // });
         }
     });
 </script>
