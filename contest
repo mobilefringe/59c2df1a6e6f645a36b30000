@@ -183,7 +183,9 @@
             var action = host + "/contests/" + slug + "/json_entry"
             $.post(action, postData, function(data){
                 if(data.message == "success"){
-                    e.target.submit();
+                    if ($("#newsletter_signup").attr('checked')) {
+                        e.target.submit();
+                    }
                     $('#succes_msg').show();
                     $('.contest_btn').prop('disabled', false);
                     $('#contest_form').trigger('reset');
