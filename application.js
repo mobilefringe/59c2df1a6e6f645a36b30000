@@ -20,10 +20,6 @@ function renderBanner(home_banner, banner_template, banners){
         start = new Date (val.start_date);
        
         start.setDate(start.getDate());
-        if(val.url == "" || val.url === null){
-           val.css = "style=cursor:default;";
-           val.noLink = "return false";
-        }
         if (start <= today){
             if (val.end_date){
                 end = new Date (val.end_date);
@@ -34,6 +30,10 @@ function renderBanner(home_banner, banner_template, banners){
             } else {
                 item_list.push(val);
             }
+        }
+        
+        if(val.url == "" || val.url == null){
+            val.show_url = "display: none";
         }
     });
 
