@@ -33,9 +33,9 @@ function renderBanner(home_banner, banner_template, banners){
         }
         
         if(val.url == "" || val.url == null){
-            val.show_url = "display: none";
-           val.css = "style=cursor:default;";
-           val.noLink = "return false";
+            val.css = "style=cursor:default;";
+            val.noLink = "return false";
+            val.show_btn = "display: none";
         }
     });
 
