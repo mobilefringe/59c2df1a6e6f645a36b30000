@@ -31,7 +31,7 @@
                                 <img class="contest banner" src="{{image_url}}">
                             </div>
                             <br>
-                            <div class="event-description">
+                            <div class="contest_description">
                                 {{{ rich_description }}}
                             </div>
                             <br>
