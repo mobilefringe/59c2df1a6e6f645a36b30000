@@ -1687,7 +1687,10 @@ gallery:after{
         margin-top: -20px;
         margin-bottom: 20;
         font-size: 16px;
-    }    
+    }
+    .agree {
+        font-size: 20px;
+    }
 }
 
 
