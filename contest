@@ -198,7 +198,7 @@
                 // var formData = new FormData($(this)[0]);
                 // var formData = JSON.stringify($("#contest_form").serialize());
                 var formData = $('#contest_form').serializeObject();
-
+                var post_data = {};
                 post_data.json = JSON.stringify(formData);
                     
                 console.log("formData", formData)
