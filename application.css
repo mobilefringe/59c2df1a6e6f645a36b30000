@@ -1734,8 +1734,9 @@ gallery:after{
         box-shadow: none;
         background: none;
     }
-    .fixed_header{
-        position:relative;
+    .fixed_header {
+        height: auto;
+        position: relative;
     }
     .cropped_image{
         width:inherit;
