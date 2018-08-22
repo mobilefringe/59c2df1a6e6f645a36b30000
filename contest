@@ -145,7 +145,7 @@
             $("#age").bind("change", function(e) {
                 e.preventDefault()
                 var selected = $("#age option:selected")
-                selected = selectedRange[0]
+                selected = selected[0]
                 var selectedRange = $(selected).val();
                 console.log(selectedRange)
                 // var href = "/posts?category=" + selectedCat
