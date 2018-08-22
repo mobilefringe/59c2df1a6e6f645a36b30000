@@ -175,11 +175,6 @@
 
 
         function submit_contest(slug, e) {
-            if ($("#newsletter_signup").is(':checked')) {
-                        console.log("Selected!")
-                        // e.target.submit();
-                    }
-                    
             // var formData = $('#contest_form').serializeObject();
             var first_name = $("#first_name").val();
             var last_name = $("#last_name").val();
@@ -199,20 +194,20 @@
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host.replace("http:", "");
             var action = host + "/contests/" + slug + "/json_entry"
-            // $.post(action, postData, function(data){
-            //     if(data.message == "success"){
-            //         if ($("#newsletter_signup").attr('checked')) {
-            //             console.log("Selected!")
-            //             // e.target.submit();
-            //         }
-            //         $('#succes_msg').show();
-            //         $('.contest_btn').prop('disabled', false);
-            //         $('#contest_form').trigger('reset');
-            //     } else {
-            //         alert('An error occured while processing your request. Please try again later!')
-            //         $('#error_msg').show();
-            //     }
-            // });
+            $.post(action, postData, function(data){
+                if(data.message == "success"){
+                    if ($("#newsletter_signup").is(':checked')) {
+                        console.log("Selected!")
+                        // e.target.submit();
+                    }
+                    $('#succes_msg').show();
+                    $('.contest_btn').prop('disabled', false);
+                    $('#contest_form').trigger('reset');
+                } else {
+                    alert('An error occured while processing your request. Please try again later!')
+                    $('#error_msg').show();
+                }
+            });
         }
     });
 </script>
