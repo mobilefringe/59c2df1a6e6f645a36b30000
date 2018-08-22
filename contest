@@ -184,7 +184,8 @@
             $.post(action, postData, function(data){
                 if(data.message == "success"){
                     if ($("#newsletter_signup").attr('checked')) {
-                        e.target.submit();
+                        console.log("Selected!")
+                        // e.target.submit();
                     }
                     $('#succes_msg').show();
                     $('.contest_btn').prop('disabled', false);
