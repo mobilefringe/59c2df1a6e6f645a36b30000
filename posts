@@ -109,7 +109,7 @@
         var main_post = blog_posts[0];
         renderSinglePost('#main_post_container', "#main_post_template", main_post);
 
-        // var posts = blog_posts.splice(1);
+        var posts = blog_posts//.splice(1);
         console.log("posts", posts)
         renderPosts('#posts_container', '#posts_template', posts);
         show_content();
