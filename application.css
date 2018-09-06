@@ -1419,9 +1419,9 @@ h4 {
     margin-top: 0;
     text-transform: uppercase;
 }
-// .post_header {
-//     margin-bottom: 0;
-// }
+.post_header {
+    margin-bottom: 10px;
+}
 .post_text {
     font-size: 22px;
     line-height: 30px;
