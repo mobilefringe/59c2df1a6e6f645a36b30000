@@ -615,8 +615,8 @@ function renderSinglePost(container, template, main_post){
         main_post.post_image = main_post.image_url;
     }
         
-    if(main_post.body.length > 175){
-        main_post.description_short = main_post.body.substring(0,175) + "...";
+    if(main_post.body.length > 200){
+        main_post.description_short = main_post.body.substring(0,200) + "...";
     } else{
         main_post.description_short = main_post.body;
     }
