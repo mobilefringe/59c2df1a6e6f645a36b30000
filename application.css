@@ -1480,9 +1480,9 @@ h4 {
 .post_details_desc {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 20px;
-    color: #5F574B;
-    line-height: 28px;
+     font-size: 24px;
+   color: #2d2c2a;
+   line-height: 36px;
     font-weight: 100;
 }
 .post_detail_divider {
