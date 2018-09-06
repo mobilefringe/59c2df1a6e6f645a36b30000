@@ -1474,7 +1474,7 @@ h4 {
     font-family: 'Open Sans Condensed';
     font-weight: bold;
     font-size: 24px;
-    color: $secondary;
+    color: #000;
     text-transform: uppercase;
 }
 .post_details_desc {
