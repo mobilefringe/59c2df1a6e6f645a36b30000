@@ -610,7 +610,7 @@ function renderSinglePost(container, template, main_post){
     Mustache.parse(template_html);   // optional, speeds up future uses
 
     if (main_post.image_url.indexOf('missing.png') > 0) {
-        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/png/1524153709000/default_logo.png";
+        main_post.post_image = "//codecloud.cdn.speedyrails.net/sites/59c2df1a6e6f645a36b30000/image/jpeg/1536258819036/default_logo-blog.jpg";
     } else {
         main_post.post_image = main_post.image_url;
     }
