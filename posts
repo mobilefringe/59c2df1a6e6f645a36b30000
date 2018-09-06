@@ -104,7 +104,7 @@
         var blog = getBlogDataBySlug("carlingwood-shop-the-look").posts;
         
         var blog_posts = blog.sort(function(a, b) {
-            return a["publish_date"] - b["publish_date"] || a["two"] - b["two"];
+            return a["publish_date"] - b["publish_date"] || a["id"] - b["id"];
         });
         // blog.sortBy(function(o){ return o.publish_date}).reverse();
         console.log("blog_posts", blog_posts)
