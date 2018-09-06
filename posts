@@ -105,7 +105,7 @@
         
         var blog_posts = blog.sort(function(a, b) {
             return a["publish_date"] - b["publish_date"] || a["id"] - b["id"];
-        });
+        }).reverse();
         // blog.sortBy(function(o){ return o.publish_date}).reverse();
         console.log("blog_posts", blog_posts)
         // var blog_posts = getBlogDataBySlug('').posts.reverse();
