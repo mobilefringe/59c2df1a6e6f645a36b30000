@@ -90,9 +90,9 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/promotions">Store Sales</a></li>
+                        <li><a href="/promotions">Promotions</a></li>
                         <li><a href="/events">Mall Events</a></li>
-						<li><a href="/posts">Get The Look</a></li>
+						<li><a href="/posts">Blog</a></li>
 						<li><a href="/carlingwood_tv">Carlingwood TV</a></li>
 					</ul>
                 </li>
