@@ -98,9 +98,23 @@
                 } 
             });
             renderGeneral('#category_container', '#category_template', category_list);
-            renderGeneral('#mobile_cat_list', '#category_template2', category_list);
+            var mobile_cat_list = category_list;
+            var all_cat = {};
+            all_cat.name = "All Categories";
+            all_cat.id= 0;
+            mobile_cat_list.unshift(all_cat);
+            renderGeneral('#category_selector_container', '#category_selector_template', mobile_cat_list);
             
-            $('#mobile_cat_list').prepend('<option value="all" selected >All Categories</option>');
+            $(".store_category_selector").click(function(e){
+                $("#category_selector_container").slideToggle();
+                $(".padded_border").toggle()
+            })
+            $(".mobile_cat").click(function(e){
+                cat_id = $(this).attr('cat_id');
+                show_mobile_cat_stores(cat_id, $(this));
+                 $("#category_selector_container").slideToggle();
+                 $(".padded_border").toggle()
+            })
             show_cat_stores();
             var coming_soon_stores = getComingSoonList();
             var new_stores = getNewStoresList();
