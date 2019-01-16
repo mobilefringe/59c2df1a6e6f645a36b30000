@@ -24,7 +24,7 @@
     <h5 class="text-center tap_here">SELECT CATEGORY
     </h5>
 </div>
-<div class="hidden_now margin_25_across" id="category_selector_container">
+<div class="hidden_now margin_25_across show_phone" id="category_selector_container">
     <script id="category_selector_template" type="x-tmpl-mustache/text">
         <p class="mobile_cat" cat_id="{{id}}">{{name}}</p>
     </script>
