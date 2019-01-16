@@ -39,7 +39,7 @@
                         <script id="contest_template" type="x-tmpl-mustache">
                             <div class="promo-details">
                                 <p class="hidden_now" id="succes_msg" style="margin-bottom: 20px;font-weight: bold;">Thank you! Your entry has been received.</p>
-                                <div class="event-image">
+                                <div class="event-image text-center">
                                     <img class="contest banner" src="{{alt_photo_url}}">
                                 </div>
                                 <br>
