@@ -151,4 +151,41 @@
         
 		loadMallDataCached(renderAll); 
     })
+    function show_mobile_cat_stores(cat_id, el){
+        if(cat_id == 0){
+            $('.main_row .col-md-6').removeClass('full_width')
+            $('#no_promo_in_category').hide();
+            $('.active_cat').removeClass('active_cat');
+            el.addClass('active_cat');
+            var rows = $('.cats_row');
+            rows.show();
+            $.each($('.store_initial'), function(i, val){
+               if ($(val).text().length > 0){
+                   $(val).show();
+               } 
+            });
+            $('#cat_name_header').hide();
+        } else {
+            $('.main_row .col-md-6').addClass('full_width')
+            var visible_row = 0
+            $('.active_cat').removeClass('active_cat');
+            el.addClass('active_cat');
+            var rows = $('.cats_row');
+            rows.hide();
+            $('#no_promo_in_category').hide();
+            $('.store_initial').hide();
+            $('#cat_name_header').text(el.text());
+            $('#cat_name_header').css('display', 'block');
+            $.each(rows, function(i, val){
+                var cat_array = val.getAttribute('data-cat').split(',');
+                if ($.inArray(cat_id, cat_array) >= 0){
+                    $(val).show();
+                    visible_row++;
+                }
+            });
+            if(visible_row == 0){
+                $('#no_promo_in_category').show();
+            }
+        }
+    }
 </script>
