@@ -78,7 +78,7 @@
                         </div>
                         <a href="{{slug}}"><h2 class="post_header">{{title}}</h2></a>
                         <div class="post_text">{{description_short}}</div>
-                        <a class="post_read_more" href="{{slug}}">Read More</a>
+                        <a class="post_read_more" href="{{slug}}">View Post</a>
                     </div>
                 </div>
             </script>
