@@ -224,7 +224,7 @@
                             <a href="https://www.instagram.com/carlingwoodsctr" target="_blank" aria-label="Instagram">
                                 <span id="social_insta"></span>
                             </a>
-                            <a href="/newsletter">
+                            <a href="/newsletter" aria-label="Newsletter">
                                 <span id="social_newsletter"></span>
                             </a>
                             <div class="clearfix"></div>
