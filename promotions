@@ -5,7 +5,7 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-3">
-            <h5 class="active_heading">STORES SALES</h5>
+            <h5 class="active_heading">PROMOTIONS</h5>
         </div>
         <div class="col-md-3">
             <h5><a href="/events">MALL EVENTS</a></h5>
