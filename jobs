@@ -1,0 +1,81 @@
+<div class="jobs_banner text-center">
+    <h3>JOBS</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5 class="active_heading">JOBS</h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/privacy_policy">PRIVACY POLICY</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/leasing">LEASING</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/specialty_leasing">SPECIALTY LEASING</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label for="option_selector">Options</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/privacy_policy">Privacy Policy</option>
+            <option value="/leasing">Leasing</option>
+            <option value="/specialty_leasing">Specialty Leasing</option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="jobs_container">
+                    <script id="jobs_template" type="x-tmpl-mustache/text">
+                        <div class="row promo_item cats_row job_list_item" data-cat="{{cat_list}}">
+                            <div class="col-md-12">
+                                <h2 class="promo_list_name">{{name}}</h2>
+                                <p>
+                                    <span class="promo_store">{{store_name}}</span>
+                                    <span class="promo_store">{{job_type}}</span>
+                                    <span class="promo_dates">{{published_on}}</span>
+                                </p>
+                                <div class="promo_list_desc hidden_phone">{{description_short}}</div>
+                                <a class="read_more" href="/jobs/{{slug}}">View job info</a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+                <div id="no_jobs" class="hidden_now">
+                    <p>There are currently no Jobs, please check again later.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll (){
+            var jobs = getJobsList().sortBy(function(o){ return o.name});
+            var published_jobs = [];
+            $.each( jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    published_jobs.push(val)
+                } 
+            });
+            if(published_jobs.length > 0){
+                renderJobs('#jobs_container', '#jobs_template', jobs, "Carlingwood Shopping Centre");
+            } else {
+                $('#no_jobs').show()
+            }
+            show_content();
+        }
+		loadMallDataCached(renderAll); 
+    })
+</script>
