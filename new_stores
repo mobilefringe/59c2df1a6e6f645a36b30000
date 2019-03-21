@@ -1,0 +1,66 @@
+<div class="main_banner text-center">
+    <h3>NEW STORES</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-4">
+            <h5><a href="/stores">STORES</a></h5>
+        </div>
+        <div class="col-md-4">
+            <h5><a href="/map">CENTRE MAP</a></h5>
+        </div>
+        <div class="col-md-4">
+            <h5 class="active_heading">NEW STORES</h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label for="option_selector">Options</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/stores">Stores</option>
+            <option value="/map">Centre Map</option>
+        </select>
+    </h5>
+</div>
+<div class="content_container main_container">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="hidden_now" id="no_promo_in_category">There are no promotions in this category.</p>
+                <div id="new_stores_container">
+                    <script id="new_stores_template" type="x-tmpl-mustache/text">
+                        <div class="row promo_item cats_row" data-cat="{{}}">
+                            <div class="col-md-3">
+                                <div class="cropped_image">
+                                    <img src="{{alt_store_front_url}}" alt="{{name}}" />
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    <a href="/stores/{{slug}}"><span class="underline promo_store">{{name}}</span></a>
+                                    <span class="promo_dates" style="{{show}}">{{open}}</span>
+                                </p>
+                                <div class="promo_list_desc">{{description_short}}</div>
+                                <a class="read_more" href="/stores/{{slug}}">Read More</a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll (){
+            var new_stores = getNewStoresList();
+            renderNewStores("#new_stores_container", "#new_stores_template", new_stores);
+
+            show_content();
+        }
+		loadMallDataCached(renderAll); 
+    })
+</script>
