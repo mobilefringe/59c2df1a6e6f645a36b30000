@@ -212,16 +212,16 @@
                             <a href="https://www.facebook.com/Carlingwood" target="_blank" aria-label="Facebook">
                                 <span id="social_fb"></span>
                             </a>
-                            <a href="https://twitter.com/CarlingwoodSCTR" target="_blank">
+                            <a href="https://twitter.com/CarlingwoodSCTR" target="_blank" aria-label="Twitter">
                                 <span id="social_twitter"></span>
                             </a>
-                            <a href="https://www.pinterest.ca/Carlingwood" target="_blank">
+                            <a href="https://www.pinterest.ca/Carlingwood" target="_blank" aria-label="Pinterest">
                                 <span id="social_pinterest"></span>
                             </a>
-                            <a href="https://www.youtube.com/user/carlingwoodsc" target="_blank">
+                            <a href="https://www.youtube.com/user/carlingwoodsc" target="_blank" aria-label="Youtube">
                                 <span id="social_yt"></span>
                             </a>
-                            <a href="https://www.instagram.com/carlingwoodsctr" target="_blank">
+                            <a href="https://www.instagram.com/carlingwoodsctr" target="_blank" aria-label="Instagram">
                                 <span id="social_insta"></span>
                             </a>
                             <a href="/newsletter">
