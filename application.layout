@@ -209,7 +209,7 @@
                             Follow us on social for <br />activities and news
                         </p>
                         <div class="social_icons">
-                            <a href="https://www.facebook.com/Carlingwood" target="_blank">
+                            <a href="https://www.facebook.com/Carlingwood" target="_blank" aria-label="Facebook">
                                 <span id="social_fb"></span>
                             </a>
                             <a href="https://twitter.com/CarlingwoodSCTR" target="_blank">
