@@ -23,7 +23,7 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/events">Events</option>
             <option value="/posts">Get The Look</option>
-            <option value="/carlingwood_tv">Carlingwood Tv</option>
+            <option value="/carlingwood_tv">Carlingwood TV</option>
         </select>
     </h5>
 </div>
