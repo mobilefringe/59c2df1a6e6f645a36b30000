@@ -24,7 +24,6 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/stores">Shopping & Services</option>
-            <option value="/map">Centre Map</option>
         </select>
     </h5>
 </div>
