@@ -1,0 +1,125 @@
+<div class="jobs_banner text-center">
+    <h3>Development</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5><a href="/promotions">STORES SALES</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/events">MALL EVENTS</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5 class="active_heading">GET THE LOOK</h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/carlingwood_tv">CARLINGWOOD TV</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label for="option_selector">Options</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/promotions">Promotions</option>
+            <option value="/events">Mall Events</option>
+            <option value="/carlingwood_tv">Carlingwood TV</option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="row_fluid">
+        <div id="main_post_container">
+            <script id="main_post_template" type="x-tmpl-mustache">
+                <div class="main_post_container">
+                    <div class="main_post_image_container">
+                        <img src="{{post_image}}" alt="{{title}}">
+                    </div>
+                    <div class="main_post_content">
+                        <div class="main_post_share_icons">
+                            <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/{{slug}}" target="_blank">
+                                <img class="post_icon pull-left" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" class="" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/{{slug}}" target="_blank">
+                                <img class="post_icon pull-right" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" class="" alt="Twitter">
+                            </a>
+                        </div>
+                        <a href="{{slug}}"><h2 class="main_post_header">{{title}}</h2></a>
+                        <div class="post_text">{{description_short}}</div>
+                        <a class="main_read_more" href="{{slug}}">View Post</a>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="row hidden_phone">
+        <div class="col-md-12">
+            <div class="blog_30"></div>
+            <p class="previous_title">Previous</p>
+        </div>
+    </div>
+    <div class="row_fluid">
+        <div id="posts_container">
+            <script id="posts_template" type="x-tmpl-mustache">
+                <div class="post_container hidden_now" id="show_{{counter}}">
+                    <div class="post_image_container">
+                        <img src="{{post_image}}" alt="{{title}}">
+                    </div>
+                    <div class="post_content">
+                        <div class="post_share_icons">
+                            <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/{{slug}}" target="_blank">
+                                <img class="post_icon pull-left" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" class="" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/{{slug}}" target="_blank">
+                                <img class="post_icon pull-right" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" class="" alt="Twitter">
+                            </a>
+                        </div>
+                        <a href="{{slug}}"><h2 class="post_header">{{title}}</h2></a>
+                        <div class="post_text">{{description_short}}</div>
+                        <a class="post_read_more" href="{{slug}}">View Post</a>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="hidden" value="1" id="num_loaded" />
+            <p class="hidden_now" id ="all_loaded">No More Posts</p>
+            <p class="" id="loaded_posts">
+                <a href="#" class="red" id="load_more_posts"><i class="fa fa-angle-down" aria-hidden="true"></i><span class="post_details_link">Load More</span></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPageData);
+    });
+    
+    function renderPageData(){
+        var blog = getBlogDataBySlug("carlingwood-development").posts;
+        
+        var blog_posts = blog.sort(function(a, b) {
+            return a["publish_date"] - b["publish_date"] || a["id"] - b["id"];
+        }).reverse();
+        // blog.sortBy(function(o){ return o.publish_date}).reverse();
+        // var blog_posts = getBlogDataBySlug('').posts.reverse();
+        var main_post = blog_posts[0];
+        renderSinglePost('#main_post_container', "#main_post_template", main_post);
+
+        var posts = blog_posts.splice(1);
+        renderPosts('#posts_container', '#posts_template', posts);
+        show_content();
+        load_more(1);
+            
+        $('#load_more_posts').click(function(e){
+            var i = $('#num_loaded').val();
+            load_more(i);
+            e.preventDefault();
+        });
+    }
+</script>
