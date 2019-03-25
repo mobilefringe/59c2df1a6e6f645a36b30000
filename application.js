@@ -622,7 +622,7 @@ function renderSinglePost(container, template, main_post){
     }
     main_post.description_short = main_post.description_short.replace("&amp;", "&");
     
-    main_post.slug = "posts/" + main_post.slug;
+    // main_post.slug = "posts/" + main_post.slug;
     
     main_post.twitter_title = main_post.title + " via @CarlingwoodSCTR";
     
