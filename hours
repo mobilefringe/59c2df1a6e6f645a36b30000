@@ -4,22 +4,25 @@
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h5 class="active_heading">HOURS</h5>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h5><a href="/about_us">ABOUT US</a></h5>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h5><a href="/directions">DIRECTIONS</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/development">DEVELOPMENT</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
-        <label for="option_selector">Options</label>
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/about_us">About Us</option>
             <option value="/directions">Directions</option>
+            <option value="/development">Development</option>
         </select>
     </h5>
 </div>
