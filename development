@@ -68,16 +68,16 @@
                     </div>
                     <div class="post_content">
                         <div class="post_share_icons">
-                            <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/{{slug}}" target="_blank">
+                            <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/development/{{slug}}" target="_blank">
                                 <img class="post_icon pull-left" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" class="" alt="Facebook">
                             </a>
-                            <a href="https://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/{{slug}}" target="_blank">
+                            <a href="https://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/development/{{slug}}" target="_blank">
                                 <img class="post_icon pull-right" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" class="" alt="Twitter">
                             </a>
                         </div>
-                        <a href="{{slug}}"><h2 class="post_header">{{title}}</h2></a>
+                        <h2 class="post_header">{{title}}</h2>
                         <div class="post_text">{{description_short}}</div>
-                        <a class="post_read_more" href="/{{slug}}">View Post</a>
+                        <a class="post_read_more" href="/development/{{slug}}">View Post</a>
                     </div>
                 </div>
             </script>
