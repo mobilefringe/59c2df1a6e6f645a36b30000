@@ -14,7 +14,7 @@
             <h5 class="active_heading">DIRECTIONS</h5>
         </div>
         <div class="col-md-3">
-            <h5 class="active_heading">DEVELOPMENT</h5>
+            <h5><a href="/development">DEVELOPMENT</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
