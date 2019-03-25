@@ -21,9 +21,9 @@
         <label for="option_selector">Options</label>
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
-            <option value="/promotions">Promotions</option>
-            <option value="/events">Mall Events</option>
-            <option value="/carlingwood_tv">Carlingwood TV</option>
+            <option value="/hours">Hours</option>
+            <option value="/about_us">About Us</option>
+            <option value="/development">Development</option>
         </select>
     </h5>
 </div>
