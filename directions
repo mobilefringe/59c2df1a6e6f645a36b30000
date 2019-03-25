@@ -20,6 +20,7 @@
             <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
             <option value="/hours">Hours</option>
             <option value="/about_us">About Us</option>
+            <option value="/directions">Directions</option>
         </select>
     </h5>
 </div>
