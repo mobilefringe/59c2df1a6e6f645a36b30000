@@ -533,14 +533,12 @@ function renderPosts(container, template, collection){
             val.post_image = val.image_url;
         }
         
-        if(val.body.length > 140){
-            val.description_short = val.body.substring(0, 140) + "...";
+        if(val.body.length > 130){
+            val.description_short = val.body.substring(0, 130) + "...";
         } else {
             val.description_short = val.body;
         }
         val.description_short = val.description_short.replace("&amp;", "&");
-        
-        // val.slug = "posts/" + val.slug;
         
         val.twitter_title = val.title + " via @CarlingwoodSCTR";
         
@@ -615,8 +613,8 @@ function renderSinglePost(container, template, main_post){
         main_post.post_image = main_post.image_url;
     }
         
-    if(main_post.body.length > 210){
-        main_post.description_short = main_post.body.substring(0,210) + "...";
+    if(main_post.body.length > 180){
+        main_post.description_short = main_post.body.substring(0, 180) + "...";
     } else{
         main_post.description_short = main_post.body;
     }
