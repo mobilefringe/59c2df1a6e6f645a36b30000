@@ -111,6 +111,9 @@
         var main_post = _.filter(blog_posts,function(o){
             return _.includes(o.tag, 'featured_post')
         })
+        if(!main_post){
+            main_post = blog_posts[0]
+        }
         renderSinglePost('#main_post_container', "#main_post_template", main_post);
 
         var posts = blog_posts.splice(1);
