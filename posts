@@ -112,7 +112,7 @@
             return _.includes(o.tag, 'featured_post')
         })
         if(!main_post){
-            main_post = blog_posts[0]
+            main_post = blog_posts[0];
         }
         renderSinglePost('#main_post_container', "#main_post_template", main_post);
 
