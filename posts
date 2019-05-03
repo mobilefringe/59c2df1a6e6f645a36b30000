@@ -108,7 +108,7 @@
             return a["publish_date"] - b["publish_date"] || a["id"] - b["id"];
         }).reverse();
 
-        var main_post = blog_posts.filter(function(o){
+        var main_post = _.filter(blog_posts,function(o){
             return 
         })
         renderSinglePost('#main_post_container', "#main_post_template", main_post);
