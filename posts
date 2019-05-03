@@ -110,7 +110,8 @@
 
         var main_post = _.filter(blog_posts,function(o){
             return _.includes(o.tag, 'featured_post')
-        })
+        });
+        console.log("main_post", main_post)
         if(!main_post){
             main_post = blog_posts[0];
         }
