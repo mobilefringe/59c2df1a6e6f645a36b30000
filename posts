@@ -109,7 +109,7 @@
         }).reverse();
 
         var main_post = _.filter(blog_posts,function(o){
-            return 
+            return _.includes(o.tag, 'featured_post')
         })
         renderSinglePost('#main_post_container', "#main_post_template", main_post);
 
