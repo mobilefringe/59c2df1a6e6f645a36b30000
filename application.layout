@@ -49,7 +49,7 @@
     
     <script>
         setEndPoint('//carlingwood.mallmaverick.com/api/v4/carlingwood/all.json');
-        setSocialEndPoint('//carlingwood.mallmaverick.com/api/v3/carlingwood/social.json')
+        setSocialEndPoint('//carlingwood.mallmaverick.com/api/v4/carlingwood/social.json')
     </script>
     
     <script>
