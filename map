@@ -8,7 +8,7 @@
 <div class="content_container main_container mobile_padding">
     <div class="margin_25_across">
         <div class="row">
-            <div class="col-md-8">
+            
                 <!--desktop map-->
                 <div id="desktopMap">
                     <div class="map">
@@ -21,7 +21,7 @@
                     <h3 id="IE_map_text">Functionality works best while viewing with Google Chrome or Firefox</h3>
                     <img id="IE_map" src="">
                 </div>
-            </div>
+         
             
             <div class="col-md-4 hidden_phone">
                 <a id="store_scroll_up" href="#" class="store_list_navigation">Scroll Up</a>
