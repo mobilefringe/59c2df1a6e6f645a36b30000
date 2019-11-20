@@ -3,7 +3,7 @@
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 
-
+<div id="desktopMap">
 
 <div class="jobs_banner text-center">
     <h3>CENTRE MAP</h3>
@@ -26,27 +26,25 @@
 <div class="content_container main_container mobile_padding">
     <div class="margin_25_across">
         <div class="row">
-        
-            <div id="desktopMap">
-                <div class="col-md-8">
-                    <div class="map">
-                        <div id="mapsvg_store_detail"></div>  
-                    </div>
+            <div class="col-md-8">
+                <div class="map">
+                    <div id="mapsvg_store_detail"></div>  
                 </div>
-                
-                <div class="col-md-4 hidden_phone">
-                    <a id="store_scroll_up" href="#" class="store_list_navigation">Scroll Up</a>
-                    <a id="store_scroll_down" href="#" class="store_list_navigation">Scroll Down</a>
-                    <p class='category_header'>Find Store</p>
-                    <div id="stores_container">
-                        <script id="stores_template" type="x-tmpl-mustache/text">
-                            <h5 class="category_name"><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a></h5>
-                        </script>
-                    </div>
+            </div>
+            <div class="col-md-4 hidden_phone">
+                <a id="store_scroll_up" href="#" class="store_list_navigation">Scroll Up</a>
+                <a id="store_scroll_down" href="#" class="store_list_navigation">Scroll Down</a>
+                <p class='category_header'>Find Store</p>
+                <div id="stores_container">
+                    <script id="stores_template" type="x-tmpl-mustache/text">
+                        <h5 class="category_name"><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a></h5>
+                    </script>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 </div>
 
 <!--mobile map-->
