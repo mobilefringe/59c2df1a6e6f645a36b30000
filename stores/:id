@@ -104,6 +104,34 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
+
+
+
+<style>
+    #IE_map{
+        margin:auto;
+        height:400px;
+    }
+    #mobileMap{
+        display:none!important;
+    }
+    #desktopMap{
+        display:block!important;
+    }
+    @media (max-width: 768px) {
+        #iFrame1 {
+            display: none;
+            min-height: 400px;
+        }
+         #mobileMap{
+            display:block!important;
+        }
+        #desktopMap{
+            display:none!important;
+        }
+    }
+</style>
+
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
