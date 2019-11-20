@@ -5,45 +5,45 @@
 
 <div id="desktopMap">
 
-<div class="jobs_banner text-center">
-    <h3>CENTRE MAP</h3>
-    <p>explore • enjoy • shop</p>
-</div>
-<div class="store_list_head main_container">
-    <div class="row hidden_phone">
-        <div class="col-md-6">
-            <h5><a href="/stores">Shops & Services</a></h5>
-        </div>
-        <div class="col-md-6">
-            <h5 class="active_heading">Centre Map</h5>
-        </div>
-        <div class="col-md-4">
-            <!--<h5><a href="#">Dining & Entertainment</a></h5>-->
-        </div>
+    <div class="jobs_banner text-center">
+        <h3>CENTRE MAP</h3>
+        <p>explore • enjoy • shop</p>
     </div>
-</div>
-<div class="margin_20"></div>
-<div class="content_container main_container mobile_padding">
-    <div class="margin_25_across">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="map">
-                    <div id="mapsvg_store_detail"></div>  
-                </div>
+    <div class="store_list_head main_container">
+        <div class="row hidden_phone">
+            <div class="col-md-6">
+                <h5><a href="/stores">Shops & Services</a></h5>
             </div>
-            <div class="col-md-4 hidden_phone">
-                <a id="store_scroll_up" href="#" class="store_list_navigation">Scroll Up</a>
-                <a id="store_scroll_down" href="#" class="store_list_navigation">Scroll Down</a>
-                <p class='category_header'>Find Store</p>
-                <div id="stores_container">
-                    <script id="stores_template" type="x-tmpl-mustache/text">
-                        <h5 class="category_name"><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a></h5>
-                    </script>
-                </div>
+            <div class="col-md-6">
+                <h5 class="active_heading">Centre Map</h5>
+            </div>
+            <div class="col-md-4">
+                <!--<h5><a href="#">Dining & Entertainment</a></h5>-->
             </div>
         </div>
     </div>
-</div>
+    <div class="margin_20"></div>
+    <div class="content_container main_container mobile_padding">
+        <div class="margin_25_across">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="map">
+                        <div id="mapsvg_store_detail"></div>  
+                    </div>
+                </div>
+                <div class="col-md-4 hidden_phone">
+                    <a id="store_scroll_up" href="#" class="store_list_navigation">Scroll Up</a>
+                    <a id="store_scroll_down" href="#" class="store_list_navigation">Scroll Down</a>
+                    <p class='category_header'>Find Store</p>
+                    <div id="stores_container">
+                        <script id="stores_template" type="x-tmpl-mustache/text">
+                            <h5 class="category_name"><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a></h5>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
