@@ -238,27 +238,48 @@
 		loadMallDataCached(renderAll); 
     })
     
-    function load_map(reg, store_details){
-        this_region = {};
-        this_region = store_details.svgmap_region;
-        if(this_region != null) {
-            map = $('#mapsvg_store_detail').mapSvg({
-                source: getSVGMapURL(),
-                colors: {stroke: '#fff', selected: "#DCBB8D", hover: "#a6a6a6"},
-                disableAll: true,
-                regions: this_region,
-                height:1700,
-                width:2300,
-                tooltipsMode:'custom',
-                zoom:true,
-                zoomButtons: {'show': true, 'location': 'left'},
-                pan:true,
-                cursor:'pointer',
-                responsive:true,
-                zoomLimit: [0,5]
-            });
-            map.selectRegion(store_details.svgmap_region);
-            drop_pin(store_details.svgmap_region, map);
+    // function load_map(reg, store_details){
+    //     this_region = {};
+    //     this_region = store_details.svgmap_region;
+    //     if(this_region != null) {
+    //         map = $('#mapsvg_store_detail').mapSvg({
+    //             source: getSVGMapURL(),
+    //             colors: {stroke: '#fff', selected: "#DCBB8D", hover: "#a6a6a6"},
+    //             disableAll: true,
+    //             regions: this_region,
+    //             height:1700,
+    //             width:2300,
+    //             tooltipsMode:'custom',
+    //             zoom:true,
+    //             zoomButtons: {'show': true, 'location': 'left'},
+    //             pan:true,
+    //             cursor:'pointer',
+    //             responsive:true,
+    //             zoomLimit: [0,5]
+    //         });
+    //         map.selectRegion(store_details.svgmap_region);
+    //         drop_pin(store_details.svgmap_region, map);
+    //     }
+    // }
+    // Enhanced map code
+    window.addEventListener('message', function(event) {
+        // IMPORTANT: check the origin of the data! 
+        if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "store-details-clicked") { 
+            // The data was sent from your site.
+            // Data sent with postMessage is stored in event.data:
+            if(event.data && event.data.selectedStore) {
+                var store = event.data.selectedStore
+                window.location.href= "/stores/"+store.slug
+            }
+        } else if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "map-loaded") {
+            if(event.data) {
+                var loading = event.data.loading;
+                if (!loading){
+                    let frame = document.getElementById('iFrame1');
+                    frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*');
+                }
+            }
         }
-    }
+    });
+
 </script>
