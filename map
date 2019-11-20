@@ -63,7 +63,6 @@
 <style>
     #IE_map{
         margin:auto;
-        height:400px;
     }
     #mobileMap{
         display:none!important;
@@ -72,11 +71,10 @@
         display:block!important;
     }
     @media (max-width: 768px) {
-        #iFrame1 {
-            display: none;
-            min-height: 400px;
+        html, iframe, #IE_map{
+            height: calc(100vh - 200px) !important;
         }
-         #mobileMap{
+        #mobileMap{
             display:block!important;
         }
         #desktopMap{
