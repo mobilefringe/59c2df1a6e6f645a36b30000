@@ -63,6 +63,17 @@
     $(document).ready(function(e){
         init(e);
         function renderPageData(){
+            console.log('IE ' + detectIE());
+            if(detectIE()){
+                var svg_url = '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
+                $('#iFrame1').remove();
+                $("#IE_map").attr("src", svg_url)
+                $('#IE_map_text').show();
+            } 
+            else {
+                $('#IE_map').remove();
+                $('#IE_map_text').remove();
+            }
             var stores = getStoresList();
             regions = {}
             $.each( stores , function( key, val ) {
@@ -71,6 +82,7 @@
                         val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
                     } 
                     obj = {};
+                    obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
                     obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
                     obj["attr"] = {}
                     // obj["attr"]["href"] = "/stores/"+val.slug
@@ -80,7 +92,7 @@
             renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
             show_content();
             var map = $('#mapsvg_store_detail').mapSvg({
-                source: getSVGMapURL(),
+                source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
                 colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
                 disableAll: true,
                 regions: regions,
@@ -92,26 +104,43 @@
                 pan:true,
                 cursor:'pointer',
                 responsive:true,
-                zoomLimit: [0,5]
+                zoomLimit: [0,5],
+                onClick: function(e,mapsvg){
+                  var region = this;
+                  mapsvg.marksHide();
+                //   console.log(region);
+                //   drop_pin(region.id,mapsvg)
+                }
             });
             
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
-                var id = $(this).attr('data-value')
+                var id = $(this).attr('data-svg')
                 map_pin(id)
             })
             
             function map_pin(value){
                 map.marksHide();
-                value = value.split('/')
-                if (value[0] != null){
-                    drop_pin(value[0], map);    
+                console.log('value', value)
+                if (value){
+                    drop_pin(value, map);    
                 }
             }
         }
         loadMallDataCached(renderPageData);
+        
     });
-    
+    window.addEventListener('message', function(event) {
+        // IMPORTANT: check the origin of the data! 
+        if (event.origin.startsWith('https://mf-map.netlify.com')) { 
+            // The data was sent from your site.
+            // Data sent with postMessage is stored in event.data:
+            if(event.data && event.data.selectedStore) {
+                var store = event.data.selectedStore
+                window.location.href= "/stores/"+store.slug
+            }
+        }
+    }); 
     
     
     
