@@ -61,6 +61,12 @@
 </div>
 
 <style>
+    .map-container {
+        margin-bottom: 30px;
+    }
+    #mapsvg_store_detail {
+        margin: 0;
+    }
     #IE_map{
         margin:auto;
     }
