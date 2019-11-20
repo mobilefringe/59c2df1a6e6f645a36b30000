@@ -32,9 +32,11 @@
     <div class="margin_25_across">
         <div class="row">
             <div class="col-md-8">
-                <!--<div class="map">-->
-                <!--    <div id="mapsvg_store_detail"></div>  -->
-                <!--</div>-->
+                <div id="desktopMap">
+                    <div class="map">
+                        <div id="mapsvg_store_detail"></div>  
+                    </div>
+                </div>
             </div>
             
             <div class="col-md-4 hidden_phone">
