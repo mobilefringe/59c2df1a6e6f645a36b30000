@@ -5,9 +5,8 @@
 
 
 
-<div class="content_container main_container mobile_padding">
-    <div class="margin_25_across">
-        <div class="row">
+
+        
             
                 <!--desktop map-->
                 <div id="desktopMap">
@@ -33,9 +32,7 @@
                     </script>
                 </div>
             </div> 
-        </div>
-    </div>
-</div>
+       
 
 <style>
     .map-container {
