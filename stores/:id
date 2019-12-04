@@ -31,7 +31,10 @@
                         <div class="details_desc">
                             <img src="{{store_front}}" style="{{show_img}}" class="margin_20 store_logo hidden_phone" alt="{{name}}" />
                             <div class="margin_20">{{{rich_description}}}</div>
-                            <div id="mapsvg_store_detail" class="mobile_padding"></div>
+                            <div class="map-container"  id="desktopMap">
+                               <div id="mapsvg_store_detail" class="mobile_padding"></div>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-4">
