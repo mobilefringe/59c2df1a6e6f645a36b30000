@@ -99,6 +99,7 @@
                 $('#IE_map_text').remove();
             }
             var stores = getStoresList();
+            
             regions = {}
             $.each( stores , function( key, val ) {
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
@@ -137,7 +138,7 @@
             
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
-                var id = $(this).attr('data-svg')
+                var id = $(this).attr('data-value')
                 map_pin(id)
             })
             
