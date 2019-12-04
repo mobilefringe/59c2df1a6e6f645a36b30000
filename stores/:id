@@ -141,7 +141,6 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             store_details = getStoreDetailsBySlug(slug);
-            console.log(store_details)
             renderStoreDetails("#store_container","#store_template", store_details, slug);
             
             //PROMOS
@@ -228,7 +227,6 @@
                 onClick: function(e,mapsvg){
                   var region = this;
                   mapsvg.marksHide();
-                  console.log(this.id);
                   drop_pin(region.id,mapsvg)
                 }
             });
