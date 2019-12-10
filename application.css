@@ -21,12 +21,13 @@ body {
 }
 
 .bulletin {
+    margin: 0;
+    padding: 5px;
+    height: auto;
     background: #d70010;
-    color: #fff;
-    padding: 5px 0;
     font-size: 18px;
+    color: #fff;
     text-align: center;
-    height: 35px
 }
 
 .bulletin p {
