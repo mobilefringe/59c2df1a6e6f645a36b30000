@@ -35,10 +35,9 @@
                                <div id="mapsvg_store_detail" class="mobile_padding"></div>
                             </div>
                             <div id="mobileMap" style="display:none;">
-                               <iframe src="https://mf-map.netlify.com/map?iframe=true&staging=true&subdomain=carlingwood&hideStoreList=true" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
+                               <iframe src="https://mf-map.netlify.com/map?iframe=true&subdomain=carlingwood&hideStoreList=true" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
                                <img id="IE_map" src="">
                             </div>
-
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -211,7 +210,7 @@
             // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
             
             var map = $('#mapsvg_store_detail').mapSvg({
-                source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
+                source: '//assets.mallmaverick.com'+getPropertyDetails().svgmap_url,
                 colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
                 disableAll: true,
                 regions: regions,
