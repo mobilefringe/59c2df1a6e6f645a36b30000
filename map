@@ -71,6 +71,9 @@
         display:block!important;
     }
     @media (max-width: 768px) {
+        .yield {
+            margin: 0;
+        }
         html, iframe, #IE_map{
             height: calc(100vh - 115.88px) !important;
         }
