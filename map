@@ -117,7 +117,7 @@
             renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
             show_content();
             var map = $('#mapsvg_store_detail').mapSvg({
-                source: '//assets.mallmaverick.com'+getPropertyDetails().svgmap_url,
+                source: '//assets.mallmaverick.com' + getPropertyDetails().svgmap_url,
                 colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
                 disableAll: true,
                 regions: regions,
