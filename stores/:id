@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-md-12 store_top">
                         <h5 class="back_btn show_phone"><a href="/stores" class="store_anchors active_heading"><i class="fa fa-angle-left" aria-hidden="true"></i> BACK TO DIRECTORY</a></h5>
-                        <span class="store_anchors active_heading">
+                        <span class="store_anchors active_heading hidden_phone">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
                             <a href="/stores" class="soft_hidden_phone">BACK TO DIRECTORY</a>
                         </span>
