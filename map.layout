@@ -153,7 +153,7 @@
     </div>
     <div class="fixed_header">
         <div class="news-ticker" data-speed="5000">
-            <div class="bulletin" id="bulletin"></div>
+            <ul class="bulletin" id="bulletin"></ul>
         </div>
         <section class="content_container main_container position_relative">
             <div class="row header mobile_margin">
@@ -197,7 +197,7 @@
                     }
                     else{
                         $.each(messages, function(key ,val){
-                            $('#bulletin').append('<p><strong>' + val.messages[0].title + ' </strong>'  + val.messages[0].body +  '</p>')
+                            $('#bulletin').append('<li><strong>' + val.messages[0].title + ' </strong>'  + val.messages[0].body +  '</li>')
                         });
                         if ($('#bulletin li').length > 1){
                             var tickerSpeed = $('.news-ticker').attr('data-speed');
