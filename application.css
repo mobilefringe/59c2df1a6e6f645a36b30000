@@ -1789,6 +1789,9 @@ gallery:after {
 }
 
 @media (max-width: 768px) {
+    .yield {
+        margin: 0;
+    }
     .popup_home img {
         min-width: 490px
     }
