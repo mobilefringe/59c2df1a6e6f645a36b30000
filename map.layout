@@ -152,9 +152,9 @@
         </div>
     </div>
     <div class="fixed_header">
-        <div class="news-ticker" data-speed="5000">
-            <ul class="bulletin" id="bulletin"></ul>
-        </div>
+        <!--<div class="news-ticker" data-speed="5000">-->
+        <!--    <ul class="bulletin" id="bulletin"></ul>-->
+        <!--</div>-->
         <section class="content_container main_container position_relative">
             <div class="row header mobile_margin">
                 <div class="hidden_mobile col-sm-3 col-md-4">
