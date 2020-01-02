@@ -472,7 +472,7 @@ h4 {
 
 .store_list_head .active_heading,
 .store_list_head .active_heading a {
-    color: #757575;
+    color: $text;
 }
 
 .store_list_head .row {
@@ -1109,15 +1109,14 @@ h4 {
 }
 
 .store_name {
+    margin-bottom: 18px;
+    padding: 0 10px;
     font-size: 22px;
     font-weight: lighter;
-    color: #424242;
-    margin-bottom: 18px;
-    padding: 0 10px
 }
 
 .store_name a {
-    color: #424242
+    color: $text;
 }
 
 .grayscale {
