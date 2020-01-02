@@ -40,52 +40,54 @@
 </div>
 <div class="margin_20"></div>
 <div class="content_container main_container mobile_padding">
-    <div class="margin_25_across">
-        <div id="post_details_container">
-            <script id="post_details_template" type="x-tmpl-mustache/text">
-                <div class="row_fluid">
-                    <div class="post_details_image">
-                        <img src="{{post_image}}" alt="{{title}}" />
-                    </div>
-                    <div class="details_share_icons hidden_phone">
-                        <a href="http://www.facebook.com/sharer.php?u=https://www.carlingwood.com/posts/{{slug}}" target="_blank">
-                            <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" alt="Facebook Logo">
-                        </a>
-                        <a href="http://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/posts/{{slug}}" target="_blank">
-                            <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" alt="Twitter Logo">
-                        </a>
-                    </div>
+    <div id="post_details_container">
+        <script id="post_details_template" type="x-tmpl-mustache/text">
+            <div class="row_fluid">
+                <div class="post_details_image">
+                    <img src="{{post_image}}" alt="{{title}}" />
                 </div>
-                <div class="blog_30 hidden_phone"></div>
-                <div class="row_fluid">
-                    <h2 class="post_details_title" title="{{title}}">{{title}}</h2>
-                    <div class="post_details_desc">{{{html_body}}}</div>
+                <div class="details_share_icons hidden_phone">
+                    <a href="http://www.facebook.com/sharer.php?u=https://www.carlingwood.com/posts/{{slug}}" target="_blank">
+                        <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" alt="Facebook Logo">
+                    </a>
+                    <a href="http://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/posts/{{slug}}" target="_blank">
+                        <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" alt="Twitter Logo">
+                    </a>
                 </div>
-                <div class="row_fluid">
-                    <div class="details_share_icons_mobile">
-                        <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/posts/{{slug}}" target="_blank">
-                            <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" alt="Facebook Logo">
-                        </a>
-                        <a href="https://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/posts/{{slug}}" target="_blank">
-                            <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" alt="Twitter Logo">
-                        </a>
+            </div>
+            <div class="blog_30 hidden_phone"></div>
+            <div class="row_fluid">
+                <h2 class="post_details_title" title="{{title}}">{{title}}</h2>
+                <div class="post_details_desc">{{{html_body}}}</div>
+            </div>
+            <div class="row_fluid">
+                <div class="details_share_icons_mobile">
+                    <a href="https://www.facebook.com/sharer.php?u=https://www.carlingwood.com/posts/{{slug}}" target="_blank">
+                        <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794350000/fb.jpg" alt="Facebook Logo">
+                    </a>
+                    <a href="https://twitter.com/home?status={{twitter_title}} https://www.carlingwood.com/posts/{{slug}}" target="_blank">
+                        <img class="details_icon" src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/jpeg/1490794359000/tw.jpg" alt="Twitter Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row_fluid">
+                <div class="post_detail_divider">
+                    <div class="col-md-6">
+                        <a href="{{prev_post}}" class="red pull-left" style="{{prev_show}}"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="post_details_link">Previous Post</span></a>
                     </div>
-                </div>
-                <div class="row_fluid">
-                    <div class="post_detail_divider">
-                        <div class="col-md-6">
-                            <a href="{{prev_post}}" class="red pull-left" style="{{prev_show}}"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="post_details_link">Previous Post</span></a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="{{next_post}}" class="red pull-right" style="{{next_show}}"><span class="post_details_link">Next Post</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
+                    <div class="col-md-6">
+                        <a href="{{next_post}}" class="red pull-right" style="{{next_show}}"><span class="post_details_link">Next Post</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
-            </script>
-        </div>
-        <div class="row_fluid">
-            <div class="blog_30 margin_30"></div>
-        </div>
+            </div>
+        </script>
+    </div>
+    <div class="row_fluid">
+        <div class="blog_30 margin_30"></div>
+        <!-- DISQUS start -->
+        <div id="disqus_thread"></div>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        <!-- DISQUS end -->
     </div>
 </div>
 
