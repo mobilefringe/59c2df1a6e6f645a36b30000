@@ -50,7 +50,6 @@
             </script>
         </div>
     </div>
-    <div class="divider"></div>
 </div>
 <script>
     $(document).ready(function(e){
