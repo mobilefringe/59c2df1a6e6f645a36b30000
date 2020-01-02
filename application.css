@@ -2502,11 +2502,11 @@ gallery:after {
     }
     .category_name a,
     .show_all_stores {
-        font-size: 16px;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
-        color: #424242;
-        font-weight: lighter
+        font-size: 16px;
+        line-height: 22px;
+        color: $text;
     }
     .active_cat {
         color: $secondary
