@@ -463,7 +463,7 @@ h4 {
 .store_list_head h5,
 .store_list_head a {
     font-size: 24px;
-    color: #c6c6c6;
+    color: $secondary;
     letter-spacing: 1.5px;
     padding: 27px 0px;
     margin: 0;
@@ -893,7 +893,7 @@ h4 {
 .newsletter_btn {
     width: 180px;
     display: inline-block;
-    background: #c6c6c6;
+    background: $secondary;
     color: #fff;
     font-size: 22px;
     margin-top: 25px;
@@ -1102,7 +1102,7 @@ h4 {
 
 .store_initial {
     font-size: 24px;
-    color: #c6c6c6;
+    color: $secondary;
     border-bottom: 1px solid #979797;
     padding: 10px;
     margin-bottom: 20px;
@@ -1241,7 +1241,7 @@ h4 {
 .read_more {
     font-weight: lighter;
     font-size: 24px;
-    color: #c6c6c6;
+    color: $secondary;
     display: inline-block;
     margin-top: 20px;
     text-decoration: underline
@@ -1382,7 +1382,7 @@ h4 {
 }
 
 .side_stores a {
-    background: #c6c6c6;
+    background: $secondary;
     margin-top: 20px;
     font-weight: 100;
     font-size: 22px;
@@ -1405,19 +1405,19 @@ h4 {
 
 .holiday_hours_home {
     font-size: 16px;
-    color: #c6c6c6;
+    color: $secondary;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-bottom: 10px
 }
 
 .holiday_hours_home:hover {
-    color: #c6c6c6
+    color: $secondary
 }
 
 .store_anchors {
     font-size: 20px;
-    color: #c6c6c6;
+    color: $secondary;
     font-weight: 400
 }
 
@@ -1557,7 +1557,7 @@ h4 {
 .load_more {
     font-weight: lighter;
     font-size: 24px;
-    color: #c6c6c6;
+    color: $secondary;
     display: inline-block
 }
 
@@ -1849,7 +1849,7 @@ gallery:after {
     .store_category_selector h5,
     .store_category_selector a {
         font-size: 20px;
-        color: #c6c6c6;
+        color: $secondary;
         letter-spacing: 1.5px;
         padding: 27px 0px;
         margin: 0;
@@ -2063,7 +2063,7 @@ gallery:after {
     }
     .promo_main_header select {
         margin-top: 10px;
-        color: #c6c6c6
+        color: $secondary
     }
     .mobile_padding {
         padding-left: 15px;
@@ -2180,7 +2180,7 @@ gallery:after {
         padding: 15px 0px
     }
     .stores_main_heading {
-        color: #c6c6c6
+        color: $secondary
     }
     .stores_main_desc {
         color: #B1B1B1
@@ -2194,7 +2194,7 @@ gallery:after {
     .mobile_dd {
         background: #F1F1F1;
         font-size: 20px;
-        color: #c6c6c6;
+        color: $secondary;
         letter-spacing: 1.5px;
         text-align: center;
         width: 100%;
@@ -2206,7 +2206,7 @@ gallery:after {
         height: 39px;
         margin-bottom: 10px;
         background: #F1F1F1;
-        color: #c6c6c6
+        color: $secondary
     }
     .custom_form_control::focus {
         outline: none
@@ -2215,7 +2215,7 @@ gallery:after {
         margin-bottom: 10px;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
-        color: #c6c6c6;
+        color: $secondary;
         font-size: 20px;
         text-transform: uppercase;
         text-align: center
@@ -2497,7 +2497,7 @@ gallery:after {
     .category_header {
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
-        color: #c6c6c6;
+        color: $secondary;
         font-size: 20px;
         text-transform: uppercase
     }
@@ -2513,7 +2513,7 @@ gallery:after {
         font-weight: lighter
     }
     .active_cat {
-        color: #c6c6c6
+        color: $secondary
     }
     .active_cat:hover,
     .active_cat:focus {
