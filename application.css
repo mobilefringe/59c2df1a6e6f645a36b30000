@@ -843,7 +843,7 @@ h4 {
 }
 
 .footer_site_map ul a {
-    color: #4C4C4C
+    color: $text;
 }
 
 .footer_logo {
@@ -857,7 +857,7 @@ h4 {
 }
 
 .rights_reserved a {
-    color: #4c4c4c
+    color: $text;
 }
 
 .newsletter_page label {
@@ -2453,7 +2453,6 @@ gallery:after {
         border-top: 1px solid #9B9B9B;
         border-bottom: 1px solid #9B9B9B;
         padding: 15px 0;
-        color: #4C4C4C
     }
     .right_border {
         border-right: 1px solid #9B9B9B
