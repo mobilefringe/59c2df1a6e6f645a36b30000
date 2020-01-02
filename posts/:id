@@ -83,13 +83,6 @@
                 </div>
             </script>
         </div>
-        <div class="row_fluid">
-            <div class="blog_30 margin_30"></div>
-            <!-- DISQUS start -->
-            <div id="disqus_thread"></div>
-            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            <!-- DISQUS end -->
-        </div>
     </div>
 </div>
 
