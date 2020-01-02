@@ -29,8 +29,8 @@ function renderEvents(container, template, collection, centre){
         if (val.image_url.indexOf('missing.png') > 0){
             val.image_url  = "//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1456246178000/promo_image.png";
         }
-        if (val.description.length > 200){
-            val.description_short = val.description.substring(0,200) + "...";
+        if (val.description.length > 150){
+            val.description_short = val.description.substring(0, 150) + "...";
         } else {
             val.description_short = val.description
         }
