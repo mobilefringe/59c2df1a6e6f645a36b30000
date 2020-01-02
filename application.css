@@ -1175,7 +1175,7 @@ h4 {
 
 .details_desc {
     font-size: 24px;
-    color: #5F574B;
+    color: $text;
     line-height: 36px;
     font-weight: 100;
     margin-bottom: 40px
@@ -1199,7 +1199,7 @@ h4 {
 .promo_list_desc {
     font-weight: lighter;
     font-size: 24px;
-    color: #5F574B;
+    color: $text;
     line-height: 36px
 }
 
@@ -1522,7 +1522,7 @@ h4 {
     font-size: 22px;
     line-height: 30px;
     letter-spacing: 0.5px;
-    color: #5F574B
+    color: $text;
 }
 
 .main_read_more,
@@ -2414,7 +2414,7 @@ gallery:after {
         margin: 0 27.5px;
         padding: 14px 0;
         font-size: 16px;
-        color: #5F574B;
+        color: $text;
         display: inline-block
     }
     .newsletter_desc {
