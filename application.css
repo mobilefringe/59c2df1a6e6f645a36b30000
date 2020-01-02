@@ -6,7 +6,7 @@ $secondary: #696969;
 $text: #212121;
 
 body {
-    color: #58595b;
+    color: $text;
     font-family: 'Open Sans Condensed';
     padding-top: 89px;
     font-size: 24px;
@@ -510,7 +510,7 @@ h4 {
 
 .hero_banner p {
     font-size: 24px;
-    color: #58595b;
+    color: $text;
     letter-spacing: 0.5px;
     margin-bottom: 32px;
     font-family: 'Open Sans Condensed';
