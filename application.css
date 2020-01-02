@@ -118,7 +118,7 @@ a:focus {
 }
 
 a {
-    color: #c6c6c6
+    color: $secondary
 }
 
 .store_list_navigation {
@@ -2517,7 +2517,7 @@ gallery:after {
     }
     .active_cat:hover,
     .active_cat:focus {
-        color: #c6c6c6
+        color: $secondary
     }
     .alpha_list {
         margin-bottom: 20px;
