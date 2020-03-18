@@ -1,4 +1,4 @@
-<div class="jobs_banner text-center">
+<div id="full_banner" class="jobs_banner text-center">
     <h3 id="mm_page_title"></h3>
     <p>explore • enjoy • shop</p>
 </div>
