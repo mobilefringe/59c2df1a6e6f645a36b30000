@@ -49,7 +49,7 @@
                 }
             }); 
              // check if top header should be shown 
-            if (slug == 'devonshire-covid-19-update') {
+            if (slug == 'carlingwood-covid-19-update') {
                 $("#full_banner").hide();
             } 
             
