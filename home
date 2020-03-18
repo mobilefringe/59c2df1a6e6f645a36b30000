@@ -5,7 +5,7 @@
     <i class="fa fa-remove close_popup"></i>
 </div>
 <!--<div class="hero_banner text-center"></div>-->
-<div id="home_banner">
+<div class="home_banner">
     <div class="flexslider text-center">
         <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache/text">
