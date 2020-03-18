@@ -4,7 +4,20 @@
     </a>
     <i class="fa fa-remove close_popup"></i>
 </div>
-<div class="hero_banner text-center"></div>
+<!--<div class="hero_banner text-center"></div>-->
+<div class="home_banner">
+    <div class="flexslider text-center">
+        <ul class="slides" id="home_banner">
+            <script id="banner_template" type="x-tmpl-mustache/text">
+                <li class="position_relative">
+                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                        <div class="hero_banner" style="background-image: url({{image_url}})"></div>
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+</div>
 <div class="content_container main_container">
     <!-- DYNAMIC BANNERS -->
     <div class="feature_items_box mobile_padding">
@@ -79,6 +92,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner',banners);
             loadSocialFeeds(render_social)
             renderFeatureItems();
             var today_hours = getTodaysHours();
