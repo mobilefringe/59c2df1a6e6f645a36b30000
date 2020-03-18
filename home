@@ -90,7 +90,6 @@
         function renderAll(){
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner',banners);
-            console.log(banners)
             
             loadSocialFeeds(render_social)
             renderFeatureItems();
