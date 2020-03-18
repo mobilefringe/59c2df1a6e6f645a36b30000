@@ -7,15 +7,11 @@
 <!--<div class="hero_banner text-center"></div>-->
 <div class="home_banner">
     <div class="flexslider text-center" id="home_banner">
-        
-            <script id="banner_template" type="x-tmpl-mustache/text">
-              
-                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="hero_banner" style="background-image: url({{image_url}})"></div>
-                    </a>
-             
-            </script>
-
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                <div class="hero_banner" style="background-image: url({{image_url}})"></div>
+            </a>
+        </script>
     </div>
 </div>
 <div class="content_container main_container">
