@@ -93,8 +93,9 @@
         init(e);
         function renderAll(){
             var banners = getBanners();
-            console.log(banners)
             renderBanner('#banner_template','#home_banner',banners);
+            console.log(banners)
+            
             loadSocialFeeds(render_social)
             renderFeatureItems();
             var today_hours = getTodaysHours();
