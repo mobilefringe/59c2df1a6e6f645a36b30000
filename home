@@ -7,15 +7,15 @@
 <!--<div class="hero_banner text-center"></div>-->
 <div class="home_banner">
     <div class="flexslider text-center" id="home_banner">
-        <!--<ul class="slides" id="home_banner">-->
+        
             <script id="banner_template" type="x-tmpl-mustache/text">
-                // <li class="position_relative">
+              
                     <a href="{{url}}" {{css}} onclick="{{noLink}}">
                         <div class="hero_banner" style="background-image: url({{image_url}})"></div>
                     </a>
-                // </li>
+             
             </script>
-        <!--</ul>-->
+
     </div>
 </div>
 <div class="content_container main_container">
