@@ -185,7 +185,7 @@
             $('#iFrame1').css('display','block')
                 console.log('IE ' + detectIE());
                 if(detectIE()){
-                    var svg_url = '//mallmaverick.com'+getPropertyDetails().svgmap_url;
+                    var svg_url = '//assets.mallmaverick.com'+getPropertyDetails().svgmap_url;
                     $('#iFrame1').remove();
                     $("#IE_map").attr("src", svg_url)
                 } else {
