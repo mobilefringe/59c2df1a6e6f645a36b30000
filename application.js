@@ -161,7 +161,7 @@ function renderGallery(container, template, collection){
         if (val.photo_url.indexOf('missing.png') > -1) {
             val.gallery_image = "//codecloud.cdn.speedyrails.net/sites/5dd57ca16e6f641b64020000/image/png/1524153709000/default_logo.png";
         } else {
-            val.gallery_image = "//www.mallmaverick.com" + val.photo_url;
+            val.gallery_image = "//www.assets.mallmaverick.com" + val.photo_url;
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
@@ -725,7 +725,7 @@ function renderStoreDetails(container, template, collection, slug){
     $.each( item_list , function( key, val ) {
         var store_front_url = getAssetURL(val.id);
         if(store_front_url != undefined && store_front_url != ""){
-            val.store_front = "https://mallmaverick.com" + store_front_url;
+            val.store_front = "https://assets.mallmaverick.com" + store_front_url;
             val.show_img = "display: block";
         } else {
             val.show_img = "display: none";
