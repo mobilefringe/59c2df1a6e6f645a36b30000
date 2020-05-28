@@ -1,5 +1,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<div class="newsletter_banner text-center">
+<div class="main_banner text-center">
     <h3>NEWSLETTER SIGN-UP</h3>
     <p>explore • enjoy • shop</p>
 </div>
