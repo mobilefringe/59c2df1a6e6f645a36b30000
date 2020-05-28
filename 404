@@ -1,0 +1,26 @@
+<div class="main_banner text-center">
+    <h3>PAGE NOT FOUND</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding pages_text">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>We can't find the page your are looking for...</h4>
+                <a class="newsletter_btn animated_btn" href="/">Go to Homepage</a>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+ <script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
