@@ -185,7 +185,7 @@
             $('#iFrame1').css('display','block')
                 console.log('IE ' + detectIE());
                 if(detectIE()){
-                    var svg_url = '//assets.mallmaverick.com'+getPropertyDetails().svgmap_url;
+                    var svg_url = '//assets.mallmaverick.com' + getPropertyDetails().svgmap_url;
                     $('#iFrame1').remove();
                     $("#IE_map").attr("src", svg_url)
                 } else {
@@ -196,19 +196,17 @@
             regions = {}
             $.each( stores , function( key, val ) {
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                    if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                    if (!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0) {
                         val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
                     } 
                     obj = {};
                     obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
                     obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
                     obj["attr"] = {}
-                    // obj["attr"]["href"] = "/stores/"+val.slug
                     regions[val.svgmap_region] = obj
                 }
             });
-            // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
-            
+
             var map = $('#mapsvg_store_detail').mapSvg({
                 source: '//assets.mallmaverick.com'+getPropertyDetails().svgmap_url,
                 colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
@@ -224,9 +222,9 @@
                 responsive:true,
                 zoomLimit: [0,5],
                 onClick: function(e,mapsvg){
-                  var region = this;
-                  mapsvg.marksHide();
-                  drop_pin(region.id,mapsvg)
+                    var region = this;
+                    mapsvg.marksHide();
+                    drop_pin(region.id,mapsvg)
                 }
             });
             
