@@ -1,0 +1,158 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<div class="main_banner text-center">
+    <h3>Contests</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+       <div class="col-md-4">
+            <h5><a href="/promotions">PROMOTIONS</a></h5>
+        </div>
+        <div class="col-md-4 text-center">
+            <h5><a href="/events">EVENTS</a></h5>
+        </div>
+     
+        <div class="col-md-4 text-right">
+            <h5 class="active_heading"><a href="/contests">CONTESTS</a></h5>
+        </div>
+        
+    </div>
+      
+        
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/promotions">Promotions</option>
+            
+            <option value="/events">Events</option>
+         
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="events_not_empty_section">
+                    <div class="" id="contest_container">
+                        <script id="contest_template" type="x-tmpl-mustache">
+                            <div class="promo-details">
+                                <p class="hidden_now" id="succes_msg" style="margin-bottom: 20px;font-weight: bold;">Thank you! Your entry has been received.</p>
+                                <div class="event-image text-center">
+                                    <img class="contest banner" src="{{alt_photo_url}}">
+                                </div>
+                                <br>
+                                <div class="event-description">
+                                    {{{ rich_description }}}
+                                </div>
+                                <br>
+                            </div> 
+                            <form id="contest_form">
+                                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                                <input type="hidden" name="cm-name" id="cm-name" />
+                                <div class="row ">
+                                    <div class="col-md-4 margin_30">
+                                        <label for="first_name">First Name</label>  
+                                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                                    </div>
+                                    <div class="col-md-4 margin_30">
+                                        <label for="last_name">Last Name</label>  
+                                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                                    </div>
+                                    <div class="col-md-4 margin_30">
+                                        <label for="phone">Phone Number</label>  
+                                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
+                                    </div>
+                                </div>
+                                <br class="hidden_phone">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="postal_code">Postal Code</label>  
+                                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="4"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="city">City</label>  
+                                        <input class="form-control" id="city" name="contest[city]" type="text" required data-validation="required" tabindex="5"/>    
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="email">Email</label> 
+                                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="6"/>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="agree">
+                                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="7"/> 
+                                            Yes, I would like to receive information about events and promotions from Carlingwood Shopping Centre.
+                                        </label>
+                                        <br/><br/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      
+                                        <br/><br/>
+                                        <button class="contest_btn animated_btn newsletter_btn" tabindex="9">Submit</button>
+                                        <br/><br/>
+                                        <br/><br/>
+                                    </div>
+                                </div>
+                            </form>
+                
+                        </script>
+                    </div>
+                </div>
+                <div id="events_empty_section" style="display:none;">
+                    <p>Check back later for exciting contest details!</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+ 
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderPageData(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var contest_details = getContestBySlug(slug);
+            renderContest("#contest_container", '#contest_template', contest_details)
+
+            show_content();
+            
+            $.validate();
+            
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+                $('html, body').animate({scrollTop : 0},800);
+            });
+        }
+        
+        function renderContest(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if(collection !== null && collection !== undefined) {
+                collection.alt_photo_url = getImageURL(collection.photo_url);
+                collection.property_name = getPropertyDetails().name;
+                var rendered = Mustache.render(template_html,collection);
+                item_rendered.push(rendered);
+                
+                $(container).show();
+                $(container).html(item_rendered.join(''));
+            }
+            else {
+                $("#events_empty_section").show();
+            }
+        }
+
+        loadMallDataCached(renderPageData);
+    });
+</script>
