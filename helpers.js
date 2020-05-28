@@ -50,6 +50,7 @@ function init(e){
 function getInsidePageBanner() {
     console.log("I got called")
     //Set dynamic page banners
+    var repos = getRepoList();
     var banner_repo = getRepoDetailsByName("Inside Page Banner");
     console.log("banner_repo", banner_repo)
     if (banner_repo) {
