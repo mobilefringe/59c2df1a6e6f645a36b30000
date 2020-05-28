@@ -48,16 +48,13 @@ function init(e){
 }
 
 function getInsidePageBanner() {
-    console.log("I got called")
     //Set dynamic page banners
-    var repos = getRepoList();
     var banner_repo = getRepoDetailsByName("Inside Page Banner");
-    console.log("banner_repo", banner_repo)
     if (banner_repo && banner_repo.images) {
         var banner_image = banner_repo.images[0].image_url;
         console.log("banner_image", banner_image)
         if (banner_image) {
-            $(".main_banner").css({ "background-image": "url(" + banner_image + ") center center no-repeat" });
+            $(".main_banner").css({ "background-image": "url(" + banner_image + ")" });
         }
     }
 }
