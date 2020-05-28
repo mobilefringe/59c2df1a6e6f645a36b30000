@@ -144,6 +144,8 @@ function show_content(){
         $('#stores_container').animate({scrollTop:  scrolled});
     })
     renderHomeHours('#home_hours_container3', '#home_hours_template3', getTodaysHours())
+    
+    getInsidePageBanner();
 }
 
 function show_cat_stores(){
