@@ -45,6 +45,15 @@ function init(e){
     //dynamically changing copyright year
     var current_year = moment().year();
     $("#current_year").text(current_year);
+    
+    //Set dynamic page banners
+    var banner_repo = getRepoDetailsByName("Inside Page Banner");
+    if (banner_repo) {
+        var banner_image = banner_repo.images[0].image_url;
+        if (banner_image) {
+            $(".inside_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), #013a80 url(" + banner_image + ") center center no-repeat" });
+        }
+    }
 }
 
 function show_content(){
