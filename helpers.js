@@ -51,6 +51,7 @@ function getInsidePageBanner() {
     console.log("I got called")
     //Set dynamic page banners
     var banner_repo = getRepoDetailsByName("Inside Page Banner");
+    console.log("banner_repo", banner_repo)
     if (banner_repo) {
         var banner_image = banner_repo.images[0].image_url;
         if (banner_image) {
