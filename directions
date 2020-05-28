@@ -1,0 +1,71 @@
+<div class="main_banner text-center">
+    <h3>DIRECTIONS</h3>
+    <p>explore • enjoy • shop</p>
+</div>
+<div class="store_list_head main_container">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5><a href="/hours">HOURS</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/about_us">ABOUT US</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5 class="active_heading">DIRECTIONS</h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/development">DEVELOPMENT</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>TAP FOR MORE OPTIONS</option>
+            <option value="/hours">Hours</option>
+            <option value="/about_us">About Us</option>
+            <option value="/development">Development</option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="margin_20" id="address_container"> 
+        	        <script id="address_template" type="x-tmpl-mustache/text">
+                        <div class="hidden-xs">
+                            <iframe title="mall map" width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed">Directions</iframe>
+                        </div>
+                        <div class="visible-xs-block">
+                        	<iframe title="mall map" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed">Directions</iframe>
+                        </div>
+                    </script>
+                </div>
+                <div id="mm_page_content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix + "/pages/carlingwood-directions.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title.toUpperCase());
+                $('#mm_page_content').html(data.body);
+                var prop_details = getPropertyDetails();
+                renderAddress('#address_container', '#address_template', prop_details);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
